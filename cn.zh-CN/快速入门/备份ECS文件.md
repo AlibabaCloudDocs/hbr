@@ -1,6 +1,6 @@
 # 备份ECS文件 {#concept_smm_52l_qfb .concept}
 
-本文介绍如何使用混合云备份服务（HBR）来备份ECS文件目录。
+本文介绍如何使用混合云备份服务（HBR）来备份ECS文件。
 
 **说明：** 目前HBR仅支持华东1（杭州）、华东2（上海）、华北2（北京）、华南1（深圳）地域下的ECS文件备份。
 
@@ -12,7 +12,7 @@ ECS文件备份客户端需要和阿里云云助手配合使用。2017年12月01
 
 -   Windows系统：
     1.  远程连接该ECS实例，在C:\\ProgramData\\aliyun\\assist\\目录下创建`region-id`文件。
-    2.  根据ECS所在区域，在文件中填写相应的`region id`。
+    2.  根据ECS所在地域，在文件中填写相应的`region id`。
 
         |地域|ID|
         |:-|:-|
@@ -24,7 +24,7 @@ ECS文件备份客户端需要和阿里云云助手配合使用。2017年12月01
     3.  在任务管理器重启AliyunService服务。
 -   Linux系统：
     1.  远程连接该ECS实例，在/usr/local/share/aliyun-assist/目录下创建`region-id`文件。
-    2.  根据ECS所在区域，在文件中填写相应的`region id`。
+    2.  根据ECS所在地域，在文件中填写相应的`region id`。
 
         |地域|ID|
         |:-|:-|
@@ -46,9 +46,9 @@ ECS文件备份客户端需要和阿里云云助手配合使用。2017年12月01
 
     -   目前HBR仅支持华东1（杭州）、华东2（上海）、华北2（北京）、华南1（深圳）地域下的ECS文件备份。
     -   如要使用专有网络，仓库地域和备份源所在的专有网络地域必须一致。
-    -   如考虑备份性能，请选择离备份源近的区域。
-    -   如考虑容灾场景，请选择离备份源远的区域。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154106692621115_zh-CN.png)
+    -   如考虑备份性能，请选择离备份源近的地域。
+    -   如考虑容灾场景，请选择离备份源远的地域。
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154208130721115_zh-CN.png)
 
 3.  在页面右上角，单击**新建仓库**。
 4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](../../../../intl.zh-CN/用户指南/文件备份/备份搜索.md)，然后单击**创建**。
@@ -78,12 +78,18 @@ ECS文件备份客户端需要和阿里云云助手配合使用。2017年12月01
 
 4.  勾选需要添加客户端的ECS实例，如果您选择了**经典网络**类型的实例，还需输入AccessKey Id和AccessKey Secret。配置完成后，单击**创建**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154106692621227_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154208130721227_zh-CN.png)
 
-    **说明：** 您可以在云端备份 / ECS客户端页面，查看客户端的安装状态。安装成功后，客户端状态会显示为已激活。如状态为安装失败，可在更多操作中选择**重新安装**。
+    **说明：** 
 
+    -   关于如何获取Access Key ID和Access Key Secret，参见[AccessKey](../../../../intl.zh-CN/通用参考/创建AccessKey.md)。
+    -   您可以在云端备份 / ECS客户端页面，查看客户端的安装状态。安装成功后，客户端状态会显示为已激活。如状态为安装失败，可在更多操作中选择**重新安装**。
 
 ## 步骤三 创建备份计划 {#section_ybr_5jl_qfb .section}
+
+**说明：** 如果备份源是Windows系统，请确保需要备份的文件有System权限。
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154208130731407_zh-CN.png)
 
 1.  在左侧导航栏，选择**云端备份** \> **ECS文件备份**。
 2.  在页面右上角，单击**创建备份计划**。
@@ -108,7 +114,7 @@ ECS文件备份客户端需要和阿里云云助手配合使用。2017年12月01
     -   如选择使用此功能，需要根据业务情况，选择限流时间段，输入限流时间段内备份可使用的最大流量，然后单击**添加**。
  |
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154106692621236_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154208130721236_zh-CN.png)
 
 5.  单击**提交**完成备份计划。
 
