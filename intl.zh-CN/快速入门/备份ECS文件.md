@@ -6,6 +6,7 @@
 
 ## 准备工作 {#section_ek5_l3n_qfb .section}
 
+-   使用ECS文件备份时需要您同意授权创建两个角色：AliyunHBRDefaultRole，AliyunECSAccessingHBRRole。
 -   您已经[开通了子账号](../../../../intl.zh-CN/最佳实践/用户权限管理.md)，并保存好子账号AK。
 
     **说明：** 激活备份客户端需要AK信息，由于主账号AK泄露会威胁您所有资源的安全，强烈建议您使用子账号进行备份操作。
@@ -52,7 +53,7 @@
     -   如要使用专有网络，仓库地域和备份源所在的专有网络地域必须一致。
     -   如考虑备份性能，请选择离备份源近的地域。
     -   如考虑容灾场景，请选择离备份源远的地域。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154296481721115_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154328760121115_zh-CN.png)
 
 3.  在页面右上角，单击**新建仓库**。
 4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](../../../../intl.zh-CN/用户指南/文件备份/备份搜索.md)，然后单击**创建**。
@@ -82,7 +83,7 @@
 
 4.  勾选需要添加客户端的ECS实例，如果您选择了**经典网络**类型的实例，还需输入AccessKey Id和AccessKey Secret。配置完成后，单击**创建**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154296481721227_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154328760121227_zh-CN.png)
 
     **说明：** 
 
@@ -121,7 +122,7 @@
 
 5.  单击**提交**完成备份计划。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154296481732725_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40740/154328760132725_zh-CN.png)
 
 
 **说明：** 在备份计划页面，可以查看备份进度。
