@@ -19,10 +19,10 @@
     -   如要使用专有网络，仓库地域和备份源所在的专有网络地域必须一致。
     -   如考虑备份性能，请选择离备份源近的区域。
     -   如考虑容灾场景，请选择离备份源远的区域。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154140645021115_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417036921115_zh-CN.png)
 
 3.  在页面右上角，单击**新建仓库**。
-4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](https://help.aliyun.com/document_detail/94105.html)，然后单击**创建**。
+4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](../../../../intl.zh-CN/用户指南/文件备份/备份搜索.md)，然后单击**创建**。
 
     **说明：** 
 
@@ -35,7 +35,7 @@
 
 1.  在左侧导航栏，选择**本地备份** \> **虚机客户端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645021122_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921122_zh-CN.png)
 
 2.  在页面右上角，单击**添加客户端**。
 3.  在添加客户端页面，配置参数，然后单击**创建**。各参数说明如下。
@@ -53,7 +53,7 @@
  |
     |报警通知|开启后，如果计划备份失败或客户端与服务器连接断开，系统会向您设置的报警联系人发邮件通知。|
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121123_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921123_zh-CN.png)
 
 4.  单击**下载客户端**和**下载证书**。
 
@@ -72,43 +72,43 @@
 
     **说明：** 更多关于如何部署OVF模板，参见[部署OVF模板](https://docs.vmware.com/cn/VMware-vSphere/6.5/com.vmware.vsphere.vm_admin.doc/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html?spm=a2c4g.11186623.2.20.37f4127dVeFZcm)。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121128_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921128_zh-CN.png)
 
 3.  在部署OVF模板页面，选择**本地文件**。单击**浏览**选择下载好的客户端文件，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121129_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921129_zh-CN.png)
 
 4.  输入OVF的名称，然后选择部署位置，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121130_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921130_zh-CN.png)
 
 5.  选择运行已部署模板的位置，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121131_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921131_zh-CN.png)
 
 6.  验证模板详细信息，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121132_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921132_zh-CN.png)
 
 7.  根据需要选择虚拟磁盘格式，选择存储已部署模板文件的位置，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121133_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921133_zh-CN.png)
 
 8.  为每个源网络选择目标网络，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121134_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417036921134_zh-CN.png)
 
 9.  自定义该软件解决方案的部署属性，然后单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121135_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021135_zh-CN.png)
 
 10. 查看配置数据，然后单击**完成**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121136_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021136_zh-CN.png)
 
 11. 在近期任务中查看任务状态，等待任务完成。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121137_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021137_zh-CN.png)
 
 12. 部署完成后，启动使用OVF模板部署的虚拟机。
 13. 打开浏览器，在地址栏输入`https://hostname:8443`。
@@ -123,7 +123,7 @@
     |密码|设置此客户端登录密码，登录密码至少为6位。|
     |证书文件|选择在控制台下载的证书。每个证书的生命周期为2天。超过此周期，请重启虚机，然后重新激活网关。|
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645121124_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021124_zh-CN.png)
 
 
 ## 步骤四 备份 {#section_jlf_vb2_qfb .section}
@@ -134,12 +134,12 @@
 2.  单击**添加服务器**或者选择**操作** \> **添加服务器** ，添加备份目标。
 3.  在添加服务器窗口，输入需备份服务器类型、服务器地址、用户名、密码，然后单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645221125_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021125_zh-CN.png)
 
 4.  在页面右上角，单击**创建备份计划**。
 5.  输入备份计划名称，选择保留时间，单击**立即执行**。单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154140645221126_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40338/154417037021126_zh-CN.png)
 
 6.  选择一个或多个虚机，单击**下一步**。
 7.  确认备份配置信息和虚机信息，单击**创建**。
