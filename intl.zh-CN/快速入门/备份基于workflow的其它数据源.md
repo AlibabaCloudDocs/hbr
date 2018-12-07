@@ -1,6 +1,6 @@
 # 备份基于workflow的其它数据源 {#concept_dty_nds_5fb .concept}
 
-本文介绍如何使用混合云备份（HBR）备份基于workflow的其它数据源。目前HBR支持备份SAP HANA，SQL Server，Oracle，MySQL，Mongo DB， Hyper-v 等。
+本文介绍如何在无定期备份计划的情况下备份基于workflow的其它数据源。目前HBR支持备份SAP HANA、SQL Server、Oracle、MySQL、MongoDB、 Hyper-V等。
 
 ## 前提条件 {#section_z4n_bhk_5fb .section}
 
@@ -23,10 +23,10 @@
     -   如要使用专有网络，仓库地域和备份源所在的专有网络地域必须一致。
     -   如考虑备份性能，请选择离备份源近的地域。
     -   如考虑容灾场景，请选择离备份源远的地域。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154259911421115_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417026021115_zh-CN.png)
 
 3.  在页面右上角，单击**新建仓库**。
-4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](https://help.aliyun.com/document_detail/94105.html)，然后单击**创建**。
+4.  在新建仓库页面，输入仓库名称、仓库描述，选择是否开启[备份搜索](../../../../intl.zh-CN/用户指南/文件备份/备份搜索.md)，然后单击**创建**。
 
     **说明：** 
 
@@ -39,7 +39,7 @@
 
 1.  在左侧导航栏，选择**备份类型** \> **文件客户端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154259911421116_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417026021116_zh-CN.png)
 
 2.  在页面右上角，单击**添加客户端**。
 3.  在添加客户端页面，配置参数，然后单击**创建**。各参数说明如下。
@@ -61,7 +61,7 @@
  |
     |报警通知|开启后，如果计划备份失败或客户端与服务器连接断开，系统会向您设置的报警联系人发邮件通知。|
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154259911421117_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417026021117_zh-CN.png)
 
 4.  单击**下载客户端**和**下载证书**。
 
@@ -75,11 +75,11 @@
 1.  安装下载的客户端安装包，选择可用的安装目录。运行的日志和执行文件都会在该目录下，确保该目录下有可用的空间。
     -   如果是Windows系统，运行安装包，选择安装的目录， 根据提示完成整个安装。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154259911421118_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417026021118_zh-CN.png)
 
     -   如果是Linux系统，直接解压到特定目录，运行`./setup`开启混合云备份服务。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154259911421119_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40337/154417026021119_zh-CN.png)
 
 2.  登录浏览器，输入`http://localhost:8011`，进入初始化注册界面。
 
@@ -117,11 +117,11 @@
 5.  打开混合云备份客户端，在页面右上角，单击下拉菜单，选择**创建备份工作流**。
 6.  单击**创建备份工作流**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154259911432244_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154417026032244_zh-CN.png)
 
 7.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154259911432245_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154417026032245_zh-CN.png)
 
 8.  在备份前脚本窗口，输入配置好的脚本文件路径。
 
@@ -130,7 +130,7 @@
 9.  单击**预览**核验脚本内容，然后单击**确定**。
 10. 在备份任务列表/创建备份工作流页面，单击**备份计划**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154259911432246_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64013/154417026032246_zh-CN.png)
 
 11. 在弹出的窗口中，选择**立即备份**。单击**确定**。
 12. 在备份任务列表/创建备份工作流页面，单击**备份数据源**。
