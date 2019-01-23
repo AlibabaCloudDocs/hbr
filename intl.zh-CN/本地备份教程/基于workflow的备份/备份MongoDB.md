@@ -37,7 +37,7 @@
         |DBHOST|127.0.0.1|
         |DBPORT|数据库服务端口|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64702/154804939832662_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64702/154823394432662_zh-CN.png)
 
     -   Linux系统
 
@@ -48,7 +48,7 @@
         |DBHOST|127.0.0.1|
         |DBPORT|数据库服务端口|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/154804939832647_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/154823394532647_zh-CN.png)
 
 
 **备份后脚本**
@@ -61,7 +61,7 @@
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154804939832506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154823394532506_zh-CN.png)
 
 3.  在备份前脚本窗口，输入步骤二中配置好的备份前脚本文件路径。
 
@@ -71,7 +71,7 @@
 
 5.  在备份任务列表/创建备份工作流页面，单击**备份计划**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154804939832522_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154823394532522_zh-CN.png)
 
 6.  在弹出的窗口中，按照以下说明进行选择，然后单击**确定**。
 
