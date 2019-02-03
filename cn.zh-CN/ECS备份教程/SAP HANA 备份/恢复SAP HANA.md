@@ -1,6 +1,6 @@
 # 恢复SAP HANA {#concept_kjd_p1k_ggb .concept}
 
-您可以使用混合云备份服务（HBR）来备份ECS实例中部署的SAP HANA数据库，并在需要时恢复SAP HANA数据库。本文主要为您介绍如何恢复SAP HANA的数据库。
+您可以使用混合云备份服务（HBR）来备份ECS实例中部署的SAP HANA数据库，并在需要时恢复。本文主要为您介绍如何恢复SAP HANA的数据库。
 
 **说明：** 恢复SAP HANA数据库期间，混合云备份会自动为您停止数据库。因此，在恢复期间， 数据库无法访问。
 
