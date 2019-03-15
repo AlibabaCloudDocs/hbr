@@ -35,13 +35,13 @@
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
         |MySQLInstallDir|数据库的安装目录|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/154823580432597_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/155263560632597_zh-CN.png)
 
     -   Linux系统
 
         `BACKUPDIR`输入数据库本地备份的路径，将备份源设置成该本地路径。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/154823580432598_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/155263560632598_zh-CN.png)
 
 
 **备份后脚本**
@@ -54,7 +54,7 @@
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154823580432506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263560632506_zh-CN.png)
 
 3.  在备份前脚本窗口，输入步骤二中配置好的备份前脚本文件路径。
 
