@@ -21,7 +21,7 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/154823582232649_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032649_zh-CN.png)
 
     -   SQL Server Full
 
@@ -30,7 +30,7 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/154823582232651_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032651_zh-CN.png)
 
     -   SQL Server Log
 
@@ -39,7 +39,7 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/154823582232655_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032655_zh-CN.png)
 
 
 **备份后脚本**
@@ -52,7 +52,7 @@
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/154823582232506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263562032506_zh-CN.png)
 
 3.  在备份前脚本窗口，输入步骤一中配置好的备份前脚本文件路径。
 
