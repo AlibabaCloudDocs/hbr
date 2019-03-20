@@ -1,6 +1,6 @@
 # Restrictions {#concept_89022_zh .concept}
 
-## File Backup Restrictions {#section_cm5_hdy_pfb .section}
+## File backup restrictions {#section_cm5_hdy_pfb .section}
 
 -   Volume Snapshot Service \(VSS\) is supported on Windows clients. Only one snapshot can be created at a time.
 
