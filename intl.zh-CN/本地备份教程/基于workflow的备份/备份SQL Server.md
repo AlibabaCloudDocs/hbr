@@ -1,62 +1,60 @@
-# 备份MySQL {#concept_hl4_fzb_wfb .concept}
+# 备份SQL Server {#concept_hl4_fzb_wfb .concept}
 
-本文主要介绍如何使用混合云备份服务（HBR）备份部署在本地的MySQL。
+本文主要介绍如何使用混合云备份服务（HBR）备份部署在本地的SQL Server。
 
 ## 前提条件 {#section_gq2_2k3_yfb .section}
 
-您已经完成了[准备工作](cn.zh-CN/本地备份教程/基于workflow的备份/准备工作.md)。
+您已经完成了[准备工作](intl.zh-CN/本地备份教程/基于workflow的备份/准备工作.md)。
 
-## 步骤一 创建workflow.env文件 {#section_jfl_hgc_wfb .section}
+## 步骤一 配置备份脚本 {#section_jfl_hgc_wfb .section}
 
-1.  打开混合云备份客户端的安装路径，然后在`client`的子目录下，创建文件`workflow.env` 。
+**备份前脚本**
 
-    **说明：** `workflow.env`的位置与`hybridebackup`及`ids`可执行程序级别相同。
+1.  [下载SQL Server的备份前脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)。
 
-2.  在`workflow.env`文件中输入备份源的用户名和密码，格式如以下示例：
+2.  配置下载的脚本，然后保存配置好的脚本。以下是配置SQL Server备份前脚本的基本配置说明。请根据业务需要配置其他参数。
 
-    ```
-    	USERNAME=root
-    	PASSWORD=****
-    ```
-
-
-## 步骤二 配置备份脚本 {#section_kll_y33_yfb .section}
-
- **备份前脚本** 
-
-1.  [下载MySQL的备份前脚本](../../../../cn.zh-CN/HBR 隐藏/数据库备份脚本.md)。
-
-2.  配置下载的脚本，然后保存配置好的脚本。以下是配置MySQL备份前脚本的基本配置说明，请根据业务需要配置其他参数。
-
-    -   Windows系统
+    -   SQL Server Diff
 
         |参数|说明|
         |:-|:-|
+        |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
-        |MySQLInstallDir|数据库的安装目录|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/155591222132597_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032649_zh-CN.png)
 
-    -   Linux系统
+    -   SQL Server Full
 
-        `BACKUPDIR`输入数据库本地备份的路径，将备份源设置成该本地路径。
+        |参数|说明|
+        |:-|:-|
+        |SqlDatabase|数据库名字|
+        |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64607/155591222132598_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032651_zh-CN.png)
+
+    -   SQL Server Log
+
+        |参数|说明|
+        |:-|:-|
+        |SqlDatabase|数据库名字|
+        |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
+
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032655_zh-CN.png)
 
 
- **备份后脚本** 
+**备份后脚本**
 
-[下载MySQL的备份后脚本](../../../../cn.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成MySQL的本地备份路径。保存脚本。
+[下载SQL Server的备份后脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成SQL Server的本地备份路径。保存脚本。
 
-## 步骤三 创建备份工作流 {#section_tjk_bj3_yfb .section}
+## 步骤二 创建备份工作流 {#section_lc1_3n3_yfb .section}
 
 1.  打开混合云备份客户端，在页面右上角，单击**创建备份工作流**。
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155591222232506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263562032506_zh-CN.png)
 
-3.  在备份前脚本窗口，输入[步骤二](#section_kll_y33_yfb)中配置好的备份前脚本文件路径。
+3.  在备份前脚本窗口，输入步骤一中配置好的备份前脚本文件路径。
 
     **说明：** 脚本路径最多为250个字符。
 
@@ -88,7 +86,7 @@
 
     **说明：** 网络限流可以帮助您在业务高峰期，控制备份的流量，以免影响正常业务。如无此需要，跳过此步骤。
 
-10. 在备份任务列表/创建备份工作流页面，单击**备份后脚本**。在备份后脚本窗口，输入[步骤二](#section_kll_y33_yfb)中配置好的备份后脚本文件路径。单击**确定**。
+10. 在备份任务列表/创建备份工作流页面，单击**备份后脚本**。在备份后脚本窗口，输入步骤一中配置好的备份后脚本文件路径。单击**确定**。
 
     **说明：** 脚本路径最多为250个字符。
 
@@ -102,7 +100,7 @@
 
 ## 相关操作 {#section_ckm_kk3_yfb .section}
 
-[恢复备份](cn.zh-CN/本地备份教程/基于workflow的备份/恢复备份.md)
+[恢复备份](intl.zh-CN/本地备份教程/基于workflow的备份/恢复备份.md)
 
-[备份搜索](cn.zh-CN/本地备份教程/基于workflow的备份/备份搜索.md)
+[备份搜索](intl.zh-CN/本地备份教程/基于workflow的备份/备份搜索.md)
 
