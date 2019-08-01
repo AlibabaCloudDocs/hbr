@@ -114,7 +114,6 @@ Proceed as follows:
 
     -   Only ECS instances that have Cloud Assistant clients and backup clients installed are displayed in a template.
     -   If you add more than 20 ECS instances at a time, new vaults are created to host additional ECS instances.
-    -   For more information about how to obtain an AccessKey ID and AccessKey Secret, see [Obtain an AccessKey for RAM users](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).
     -   If you do not need to install a backup client on an ECS instance, you can delete the row where the ECS instance is located.
     -   We recommend that you do not change the column headers, such as **Instance ID**, **Instance Name**, and **Network Type**.
     -   We recommend that you delete the local template after uploading the template to ensure account security.
