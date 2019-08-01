@@ -82,7 +82,7 @@ Proceed as follows:
     **Note:** 
 
     -   You can only select or search for ECS instances that are located in the current region.
-    -   If you select ECS instances that are located in a classic network, you must enter the [AccessKey ID and AccessKey Secret](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).
+    -   If you select ECS instances that are located in a classic network, you must enter the [AccessKey ID and AccessKey Secret](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md#).
 7.  After the configurations are complete, click **Create** and then backup clients will be installed on the selected ECS instances.
 
  **Install ECS backup clients from a template** 
