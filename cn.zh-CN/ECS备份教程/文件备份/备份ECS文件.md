@@ -6,7 +6,7 @@
 
 ## 前提条件 {#section_vnn_bfv_fgb .section}
 
-您已经完成了[准备工作](cn.zh-CN/ECS备份教程/文件备份/准备工作.md)。
+您已经完成了[准备工作](intl.zh-CN/ECS备份教程/文件备份/准备工作.md)。
 
 ## 为单个ECS实例备份文件 {#section_lp4_1dv_fgb .section}
 
