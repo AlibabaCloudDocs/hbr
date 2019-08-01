@@ -16,8 +16,6 @@ When using Hybrid Backup Recovery \(HBR\) to back up files from ECS instances, y
 2.  Choose **ECS Backup** \> **ECS File Backup**.
 3.  Authorization pages appear one by one, which require you to confirm the authorization of these roles.
 
-![](images/37733_en-US.png)
-
 ## Cloud Assistant {#section_qb5_wz5_fgb .section}
 
 -   An ECS backup client must work with Cloud Assistant. By default, Cloud Assistant clients are installed on ECS instances that are created after Dec 1, 2017. When ECS instances from which you need to back up data are purchased before Dec 1, 2017, you must manually [install a Cloud Assistant client](../../../../intl.en-US/Deployment & Maintenance/Cloud assistant/Configure the cloud assistant client.md).
@@ -36,7 +34,7 @@ When using Hybrid Backup Recovery \(HBR\) to back up files from ECS instances, y
             |China \(Hangzhou\)|cn-hangzhou|
             |China \(Shanghai\)|cn-shanghai|
             |China \(Beijing\)|cn-beijing|
-            |China \(Shenzhen\)|cn-shenzhen |
+            |China \(Shenzhen\)|cn-shenzhen|
 
         2.  Restart the AliyunService service by using Task Manager.
     -   For an ECS instance running Linux
@@ -53,7 +51,7 @@ When using Hybrid Backup Recovery \(HBR\) to back up files from ECS instances, y
             |China \(Hangzhou\)|cn-hangzhou|
             |China \(Shanghai\)|cn-shanghai|
             |China \(Beijing\)|cn-beijing|
-            |China \(Shenzhen\)|cn-shenzhen |
+            |China \(Shenzhen\)|cn-shenzhen|
 
         2.  Run the `chkconfig agentwatch off` command and the `chkconfig agentwatch on` command. Alternatively, you can run the `systemctl restart agentwatch` command to restart the Cloud Assistant client.
 
