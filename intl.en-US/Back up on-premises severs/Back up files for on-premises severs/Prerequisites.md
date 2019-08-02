@@ -33,7 +33,7 @@ You can use a file client to perform a backup or restore job. However, you must 
 4.  In the upper-right corner of the page, click **Create Client**.
 5.  In the Create Client dialog box, configure the required settings and click **Create**. Settings are described in the following table.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595154114_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473909354114_en-US.jpg)
 
     |Name|Description|
     |:---|:----------|
@@ -71,15 +71,15 @@ After you download a file client, you need to install and activate the client. P
 
     -   If you install a client on Windows, run an installation package, select an installation folder, and follow the instructions to complete the installation.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595154107_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473909354107_en-US.png)
 
     -   If you install a client on Linux, extract an installation package to a folder and run the `./setup` command to install the client.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595254108_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473909454108_en-US.png)
 
 2.  After a client is installed, you need to activate the client. Go to the HBR console, in the Create Client dialog box, click **Next** and configure the required settings as described in the following table to activate the client.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595254109_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473909454109_en-US.png)
 
     **Note:** We recommend that you download and install a client before activating the client.
 
