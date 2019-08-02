@@ -2,6 +2,8 @@
 
 You can restore backups to a server or virtual machine. This applies to backups that are created by using a client or another client in the same vault.
 
+**Note:** When you restore a piece of data among a large number of backups, you can use the[Search backups](intl.en-US/Back up on-premises severs/Back up files for on-premises severs/Search backups.md#) function to locate the target piece of data in seconds.
+
 ## Restore backups by using this client {#section_whg_btc_sfb .section}
 
  **Procedure** 
