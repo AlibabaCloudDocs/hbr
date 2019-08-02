@@ -12,7 +12,7 @@ You can use Hybrid Backup Recovery \(HBR\) to back up files and folders from ser
 
 Resource Access Management \(RAM\) enables you to manage user access to Alibaba Cloud resources. You can create and manage multiple RAM users with a single Alibaba Cloud account. You can grant different permissions for each RAM user. This allows each RAM user to have different access permissions on Alibaba Cloud resources.
 
-An AccessKey is required when you activate a backup client. As any leak of an Alibaba Cloud account's AccessKey will expose cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have created a RAM user account and save the AccessKey of the RAM user account.
+An AccessKey is required when you activate a backup client. As any leak of an Alibaba Cloud account's AccessKey will expose cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#).
 
 ## Create a client {#section_cnq_phc_ggb .section}
 
@@ -33,7 +33,7 @@ You can use a file client to perform a backup or restore job. However, you must 
 4.  In the upper-right corner of the page, click **Create Client**.
 5.  In the Create Client dialog box, configure the required settings and click **Create**. Settings are described in the following table.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472015254114_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595154114_en-US.jpg)
 
     |Name|Description|
     |:---|:----------|
@@ -71,15 +71,15 @@ After you download a file client, you need to install and activate the client. P
 
     -   If you install a client on Windows, run an installation package, select an installation folder, and follow the instructions to complete the installation.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472015254107_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595154107_en-US.png)
 
     -   If you install a client on Linux, extract an installation package to a folder and run the `./setup` command to install the client.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472015354108_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595254108_en-US.png)
 
 2.  After a client is installed, you need to activate the client. Go to the HBR console, in the Create Client dialog box, click **Next** and configure the required settings as described in the following table to activate the client.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472015354109_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156473595254109_en-US.png)
 
     **Note:** We recommend that you download and install a client before activating the client.
 
