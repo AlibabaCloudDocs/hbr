@@ -6,7 +6,7 @@ If you fail to activate a file client, you can perform the following steps to re
 
 1.  Log on to the [Hybrid Backup Recovery console](https://hbr.console.aliyun.com).
 2.  On the File Client page, locate the failed client.
-3.  In the Actions column, click **Activate Client**.![](images/43535_en-US.png)
+3.  In the Actions column, click **Activate Client**.
 4.  In the Create Client dialog box, enter the required information based on the descriptions provided in the following table.
 
     |Name|Description|
