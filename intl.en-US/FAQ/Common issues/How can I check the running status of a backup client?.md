@@ -20,8 +20,6 @@ If a backup client is installed on a Windows system, you can perform the followi
 
     netstat -ano | findstr "8011"
 
-    ![](images/21563_en-US.png)
-
 
 ## Linux {#section_1xq_yz0_g5f .section}
 
