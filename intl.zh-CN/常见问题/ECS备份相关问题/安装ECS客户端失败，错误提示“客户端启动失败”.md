@@ -18,6 +18,6 @@
 4.  在左侧导航栏，选择**云端备份** \> **ECS客户端**。
 5.  找到客户端安装失败的ECS实例。在该实例相应的操作列表中，选择**操作** \> **重新安装**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/78562/156471612234050_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/78562/156471658934050_zh-CN.png)
 
 

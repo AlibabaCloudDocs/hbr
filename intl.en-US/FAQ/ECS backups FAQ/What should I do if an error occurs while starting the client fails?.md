@@ -18,6 +18,3 @@ You can uninstall the ECS client from the ECS instance, stop anti-virus software
 4.  In the left-side navigation pane, choose **ECS Backup** \> **ECS File Client**.
 5.  Locate the ECS instance where the ECS client failed to install. Choose **Operations** \> **Reinstall**.
 
-    ![](images/34050_en-US.png)
-
-
