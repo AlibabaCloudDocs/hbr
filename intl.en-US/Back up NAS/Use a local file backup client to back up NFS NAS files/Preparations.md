@@ -20,7 +20,7 @@ In the [NAS console](https://nas.console.aliyun.com), add a mount point for the 
 
 After adding the mount point, click **Manage** next to the file system in the Action column. On the File System Details page that appears, check the mount point path.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473612854144_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473853754144_en-US.jpg)
 
 ## Mount an NFS NAS file system {#section_ehz_nou_clx .section}
 
@@ -53,7 +53,7 @@ You can use a file client to back up and restore data. Before that, you need to 
 4.  On the File Client page, click **Create Client** in the upper-right corner.
 5.  In the Create Client dialog box that appears, set the parameters.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473612954157_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473853754157_en-US.jpg)
 
     The following table describes the parameters.
 
@@ -91,7 +91,7 @@ After the client installation package is downloaded, install and activate the cl
 
 2.  After the client is installed, activate it. Log on to the HBR console. In the Create Client dialog box, click **Next** and then set the parameters as instructed in the following table.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473612954159_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473853854159_en-US.jpg)
 
     |Parameter|Description|
     |:--------|:----------|
