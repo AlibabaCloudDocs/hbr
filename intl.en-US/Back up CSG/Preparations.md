@@ -4,7 +4,7 @@ You can use HBR to back up CSG instances and restore them when necessary. This t
 
 ## Activate a RAM user {#section_2im_sbo_df8 .section}
 
-Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. You can create and manage multiple RAM users within a single Alibaba Cloud account. You can grant different permissions to each RAM user, so that RAM users have different access permissions on Alibaba Cloud resources. Make sure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#)before backing up data.
+Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. You can create and manage multiple RAM users within a single Alibaba Cloud account. You can grant different permissions to each RAM user, so that RAM users have different access permissions on Alibaba Cloud resources. Make sure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#) before backing up data.
 
 ## Register a CSG instance {#section_ma1_77o_cec .section}
 
