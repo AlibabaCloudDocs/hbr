@@ -10,7 +10,7 @@ A backup vault is an HBR cloud backup warehouse used to store backup data on the
 -   You must delete a mirror vault before deleting the linked source vault.
 -   A source vault is created when you create a backup client.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132912/156465349654118_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132912/156472627554118_en-US.jpg)
 
 ## Create a mirror vault {#section_vhf_xnt_xgb .section}
 
@@ -18,7 +18,7 @@ Proceed as follows:
 
 1.  Log on to the [HBR console](https://hbr.console.aliyun.com).
 2.  In the left-side navigation pane, click **Overview**.
-3.  Locate a vault for which you need to create a mirror vault, click the ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132912/156465349739717_en-US.png) icon in the upper-right corner.
+3.  Locate a vault for which you need to create a mirror vault, click the ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132912/156472627539717_en-US.png) icon in the upper-right corner.
 4.  In the Create Mirror Vault dialog box, select a region where the new mirror vault is located.
 
     **Note:** For disaster recovery, we recommend that you do not select the same region where the source vault is located.
@@ -34,8 +34,8 @@ To restore data from a remote mirror vault, you need to download a backup client
 
     **Note:** When you configure the backup client, you need to specify the Backup Vault Name as the name of the target mirror vault.
 
-2.  Log on to the backup client on the target server or virtual machine, and restore backups [from another client](intl.en-US/Back up on-premises severs/Back up files for on-premises severs/Restore backups.md#section_cwb_rdg_xgb).
+2.  Log on to the backup client on the target server or virtual machine, and [restore backups from another client](intl.en-US/Back up on-premises severs/Back up files for on-premises severs/Restore backups.md#section_cwb_rdg_xgb).
 
-    **Note:** You can also use the [backup search](intl.en-US/Back up on-premises severs/Back up files for on-premises severs/Search backups.md) function to restore backups.
+    **Note:** You can also use the [Search backups](intl.en-US/Back up on-premises severs/Back up files for on-premises severs/Search backups.md) function to restore backups.
 
 
