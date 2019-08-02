@@ -20,13 +20,13 @@ In the [NAS console](https://nas.console.aliyun.com), add a VPC-type mount point
 
 After adding the mount point, click **Manage** next to the file system in the Action column. On the File System Details page that appears, check the mount point path.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473508754144_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473513654144_en-US.jpg)
 
 ## Create an ECS instance {#section_j39_3f9_zqi .section}
 
 Create an ECS instance in the VPC where the mount point for the NAS file system resides. The CentOS operating system is used in this example. For more information, see [Create an instance by using the wizard](../../../../../intl.en-US/Instances/Create an instance/Create an instance by using the wizard.md#).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473508754148_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473513654148_en-US.jpg)
 
 ## Mount the NFS NAS file system to the ECS instance {#section_q1j_jug_9iu .section}
 
