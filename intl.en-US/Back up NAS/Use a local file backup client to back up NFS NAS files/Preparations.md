@@ -4,7 +4,7 @@ You can use HBR to back up NFS NAS files in a local IDC and restore them when ne
 
 **Note:** 
 
--   For more information about how to back up NFS NAS files in an ECS instance, see [EN-US\_TP\_776277.md\#](intl.en-US/Back up NAS/Use an ECS file backup client to back up NFS NAS files/Back up NAS files.md#).
+-   For more information about how to back up NFS NAS files in an ECS instance, see [Back up NAS files](intl.en-US/Back up NAS/Use an ECS file backup client to back up NFS NAS files/Back up NAS files.md#).
 -   To achieve the optimal backup speed, we recommend that you run an HBR backup client on a host that uses a 64-bit CPU with at least two cores and has more than 8 GB memory available.
 -   The size of data that can be backed up varies depending on available memory resources. For example, with 4 GB memory available, you can back up a maximum number of one million files with a total size of 8 TB.
 
@@ -12,22 +12,22 @@ You can use HBR to back up NFS NAS files in a local IDC and restore them when ne
 
 Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. You can create and manage multiple RAM users within a single Alibaba Cloud account. You can grant different permissions to each RAM user, so that RAM users have different access permissions on Alibaba Cloud resources.
 
-You need to use an AccessKey to activate the backup client. We strongly recommend that you use the AccessKey of a RAM user to prevent the leakage of your Alibaba Cloud account AccessKey from compromising the security of all your resources. Before backing up data, make sure that you have [activated a RAM user](../../../../intl.en-US/Best Practices/User permissions.md), and keep the AccessKey of the RAM user safe.
+An AccessKey is required when you activate a backup client. As any leak of an Alibaba Cloud account's AccessKey will expose cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#).
 
 ## Add a mount point {#section_yj7_spb_6n8 .section}
 
-In the [NAS console](https://nas.console.aliyun.com), add a mount point for the created NFS NAS file system. For more information, see [../../../../dita-oss-bucket/SP\_111/DNnas1882233/EN-US\_TP\_18694.md\#section\_6xi\_a3u\_zkq](../../../../intl.en-US/Console User Guide/Manage mount points.md#section_6xi_a3u_zkq).
+In the [NAS console](https://nas.console.aliyun.com), add a mount point for the created NFS NAS file system. For more information, see [Create a mount point](../../../../intl.en-US/Console User Guide/Manage mount points.md#section_6xi_a3u_zkq).
 
 After adding the mount point, click **Manage** next to the file system in the Action column. On the File System Details page that appears, check the mount point path.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473478554144_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/776269/156473612854144_en-US.jpg)
 
 ## Mount an NFS NAS file system {#section_ehz_nou_clx .section}
 
 The procedure is as follows:
 
-1.  Run the sudo yum install nfs-utils command to install the NFS client. The CentOS operating system is used in this example. For more information about how to install the NFS client in another Linux operating system, see [../../../../dita-oss-bucket/SP\_111/DNnas1858274/EN-US\_TP\_21202.md\#](../../../../intl.en-US/Quick Start/NAS.md#).
-2.  After installing the NFS client, mount the NFS file system. For more information, see [../../../../dita-oss-bucket/SP\_111/DNnas1858274/EN-US\_TP\_21207.md\#](../../../../intl.en-US/Console User Guide/Mount a file system/Mount an NFS file system.md#).
+1.  Run the sudo yum install nfs-utils command to install the NFS client. The CentOS operating system is used in this example. For more information about how to install the NFS client in another Linux operating system, see [Step 1: Install an NFS client](../../../../intl.en-US/Console User Guide/Mount a file system/Mount an NFS file system.md#section_kvj_d02_szj).
+2.  After installing the NFS client, mount the NFS file system. For more information, see [Mount an NFS file system in Linux](../../../../intl.en-US/Console User Guide/Mount a file system/Mount an NFS file system.md#).
 
 ## Add a client {#section_cnq_phc_ggb .section}
 
@@ -53,7 +53,7 @@ You can use a file client to back up and restore data. Before that, you need to 
 4.  On the File Client page, click **Create Client** in the upper-right corner.
 5.  In the Create Client dialog box that appears, set the parameters.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473478654157_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473612954157_en-US.jpg)
 
     The following table describes the parameters.
 
@@ -91,7 +91,7 @@ After the client installation package is downloaded, install and activate the cl
 
 2.  After the client is installed, activate it. Log on to the HBR console. In the Create Client dialog box, click **Next** and then set the parameters as instructed in the following table.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473478654159_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/790379/156473612954159_en-US.jpg)
 
     |Parameter|Description|
     |:--------|:----------|
