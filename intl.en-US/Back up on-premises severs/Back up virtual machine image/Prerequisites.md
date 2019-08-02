@@ -6,7 +6,7 @@ Hybrid Backup Recovery \(HBR\) allows you to back up the images of local VMware 
 
 Resource Access Management \(RAM\) enables you to manage user access to Alibaba Cloud resources. You can create and manage multiple RAM users with a single Alibaba Cloud account. You can grant different permissions for each RAM user. This allows each RAM user to have different access permissions to Alibaba Cloud resources.
 
-An AccessKey is required when you activate a backup client. As the leak of an Alibaba Cloud account's AccessKey exposes cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have [created a RAM user](../../../../intl.en-US/Best Practices/User permissions.md) and save the AccessKey of the RAM user.
+An AccessKey is required when you activate a backup client. As the leak of an Alibaba Cloud account's AccessKey exposes cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#).
 
 ## Create a client {#section_cdt_54c_ggb .section}
 
@@ -49,45 +49,43 @@ After downloading a client and certificate, you need to install the client. Afte
 
 2.  In the left-side navigation pane, right-click the virtual machine that you need to deploy an OVF template and select **Deploy OVF Template**.
 
-    **Note:** For more information, see [Deploy an OVF template](https://docs.vmware.com/cn/VMware-vSphere/6.5/com.vmware.vsphere.vm_admin.doc/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html?spm=a2c4g.11186623.2.20.37f4127dVeFZcm).
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355435163_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008235163_en-US.png)
 
 3.  In the Deploy OVF Template dialog box, select **Local File**. Click **Browse** to select a downloaded client file, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355535164_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008235164_en-US.png)
 
 4.  Enter the name of the OVF template, select a location you need to deploy the OVF template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355535165_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008335165_en-US.png)
 
 5.  Select a location where you need to run the deployed template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355535166_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008335166_en-US.png)
 
 6.  Verify the details of the template, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355635167_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008335167_en-US.png)
 
 7.  Select the required virtual disk format, select a datastore to store the deployed OVF template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355635168_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008335168_en-US.png)
 
 8.  Select a source network, map the network to a destination network, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355635169_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008435169_en-US.png)
 
 9.  Customize the deployment properties for the software solution, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355735170_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008435170_en-US.png)
 
 10. View the configuration details, and click **Finish**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355735171_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008435171_en-US.png)
 
 11. On the Recent Tasks page, you can view the progress of the deployment task. This process may take a few minutes.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156465355735172_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156473008535172_en-US.png)
 
 12. After the OVF template is deployed, turn on the virtual machine that is deployed by using the OVF template.
 13. Open a browser and enter `https://hostname:8443` in the address bar.
@@ -98,7 +96,7 @@ After downloading a client and certificate, you need to install the client. Afte
 
     |Name|Description|
     |:---|:----------|
-    |AccessKey ID and AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the Hybrid Backup Recovery \(HBR\) service is activated. For more information, see [AccessKey](../../../../intl.en-US/General Reference/Create an AccessKey.md).|
+    |AccessKey ID and AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the Hybrid Backup Recovery \(HBR\) service is activated.|
     |Password|The logon password of the client. The password must be a minimum of six characters in length.|
     |Certificate|The certificate you have downloaded from the HBR console. The validity period of each certificate is two days. You must download a new certificate to register a client when the certificate in use expires.|
 
