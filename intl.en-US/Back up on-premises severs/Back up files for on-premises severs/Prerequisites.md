@@ -12,7 +12,7 @@ You can use Hybrid Backup Recovery \(HBR\) to back up files and folders from ser
 
 Resource Access Management \(RAM\) enables you to manage user access to Alibaba Cloud resources. You can create and manage multiple RAM users with a single Alibaba Cloud account. You can grant different permissions for each RAM user. This allows each RAM user to have different access permissions on Alibaba Cloud resources.
 
-An AccessKey is required when you activate a backup client. As any leak of an Alibaba Cloud account's AccessKey will expose cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have [created a RAM user account](../../../../intl.en-US/Best Practices/User permissions.md) and save the AccessKey of the RAM user account.
+An AccessKey is required when you activate a backup client. As any leak of an Alibaba Cloud account's AccessKey will expose cloud resources to security risks, we recommend that you use the AccessKey of a RAM user to perform the activation. Before performing a backup job, ensure that you have created a RAM user account and save the AccessKey of the RAM user account.
 
 ## Create a client {#section_cnq_phc_ggb .section}
 
@@ -33,7 +33,7 @@ You can use a file client to perform a backup or restore job. However, you must 
 4.  In the upper-right corner of the page, click **Create Client**.
 5.  In the Create Client dialog box, configure the required settings and click **Create**. Settings are described in the following table.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156465331254114_en-US.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472012854114_en-US.jpg)
 
     |Name|Description|
     |:---|:----------|
@@ -71,15 +71,15 @@ After you download a file client, you need to install and activate the client. P
 
     -   If you install a client on Windows, run an installation package, select an installation folder, and follow the instructions to complete the installation.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156465331254107_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472012854107_en-US.png)
 
     -   If you install a client on Linux, extract an installation package to a folder and run the `./setup` command to install the client.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156465331354108_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472012854108_en-US.png)
 
 2.  After a client is installed, you need to activate the client. Go to the HBR console, in the Create Client dialog box, click **Next** and configure the required settings as described in the following table to activate the client.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156465331354109_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156472012954109_en-US.png)
 
     **Note:** We recommend that you download and install a client before activating the client.
 
@@ -88,8 +88,8 @@ After you download a file client, you need to install and activate the client. P
     |Client IP Address|The IP address of the file client, which must be accessible by the host. The IP address is either an internal IP address or a public IP address. For example, 127.0.0.1 \(default\), 12.34.56.78:8011, and http://87.65.43.21:8443. **Note:** The IP address must be accessible by a browser.
 
  |
-    |AccessKey ID|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated. For more information, see [AccessKey](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).|
-    |AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated. For more information, see [AccessKey](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).|
+    |AccessKey ID|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated.|
+    |AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated.|
     |Create Client Password|Set the logon password of the client. The password must be a minimum of six characters in length.|
 
 3.  Click **Activate Client** to open a web page. You can use this web page to manage the file client. You can use a file client to back up data.
