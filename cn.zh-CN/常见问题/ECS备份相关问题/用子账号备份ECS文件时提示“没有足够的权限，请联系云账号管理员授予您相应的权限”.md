@@ -2,5 +2,5 @@
 
 出现该提示的原因是主账号没有授权AliyunHBRDefaultRole，AliyunECSAccessingHBRRole这两个角色。
 
-使用主账号登录混合云备份控制台，选择**ECS备份** \> **文件备份**，同意授权创建这两个角色即可。您也可以赋予子账号AliyunRAMFullAccess，AliyunSTSAssumeRoleAccess的权限，具体参见[用户权限管理](../../../../../intl.zh-CN/最佳实践/用户权限管理.md)。
+使用主账号登录混合云备份控制台，选择**ECS备份** \> **文件备份**，同意授权创建这两个角色即可。您也可以赋予子账号AliyunRAMFullAccess，AliyunSTSAssumeRoleAccess的权限。
 
