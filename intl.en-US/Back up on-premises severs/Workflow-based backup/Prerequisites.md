@@ -52,15 +52,15 @@ After downloading a client and certificate to a server or virtual machine from w
 
     -   If you install a client on Windows, run an installation package, select an installation folder, and follow the instructions to complete the installation.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576309354107_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576384354107_en-US.png)
 
     -   If you install a client on Linux, extract an installation package to a folder and run the `./setup` command to install the client.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576309354108_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576384454108_en-US.png)
 
 2.  After a client is installed, you need to activate the client. Go to the HBR console. In the Create Client dialog box, click **Next**, and configure the required settings as described in the following table to activate the client.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576309354109_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83047/156576384454109_en-US.png)
 
     **Note:** We recommend that you download and install a client before activating the client.
 
@@ -69,8 +69,8 @@ After downloading a client and certificate to a server or virtual machine from w
     |Client IP address|The IP address of the file client. The host you are working with must be able to access the IP address of the file client. The IP address is either an internal IP address or public IP address. For example, 127.0.0.1 \(default\), 12.34.56.78:8011, and http://87.65.43.21:8443. **Note:** The IP address must be accessible by a browser.
 
  |
-    |AccessKey ID|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated. For more information, see [AccessKey](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).|
-    |AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated. For more information, see [AccessKey](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).|
+    |AccessKey ID|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated.|
+    |AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated.|
     |Create Client Password|Set the logon password of the client. The password must be a minimum of six characters in length.|
 
 3.  Click **Activate Client** to open a web page. You can use this web page to manage the file client. You can use a file client to back up data.
@@ -88,7 +88,7 @@ If you fail to activate a client, you can use one of the following methods to re
     |Name|Description|
     |:---|:----------|
     |Upload Certificate|You can upload the token you have downloaded from the console. The token is used as a certificate. The validity period of each certificate is two days. You must download a new certificate to register a client when the certificate in use expires.|
-    |AccessKey ID and AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated. For more information, see [AccessKey](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).|
+    |AccessKey ID and AccessKey Secret|Download the AccessKey ID and AccessKey Secret of the Alibaba Cloud account where the HBR service is activated.|
     |Network Type|     -   Virtual Private Cloud \(VPC\): Select this option when the host to be backed up is located in a VPC and in the same region where the backup vault is located.
     -   Classic Network: Select this option when VPCs are not applicable.
  |
