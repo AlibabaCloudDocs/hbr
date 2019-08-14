@@ -8,9 +8,9 @@
 
 ## 步骤一 配置备份脚本 {#section_jfl_hgc_wfb .section}
 
-**备份前脚本**
+ **备份前脚本** 
 
-1.  [下载SQL Server的备份前脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)。
+1.  [下载SQL Server的备份前脚本](../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)。
 
 2.  配置下载的脚本，然后保存配置好的脚本。以下是配置SQL Server备份前脚本的基本配置说明。请根据业务需要配置其他参数。
 
@@ -21,7 +21,7 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032649_zh-CN.png)
+         ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/156576319832649_zh-CN.png)
 
     -   SQL Server Full
 
@@ -30,7 +30,7 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032651_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/156576319832651_zh-CN.png)
 
     -   SQL Server Log
 
@@ -39,12 +39,12 @@
         |SqlDatabase|数据库名字|
         |BackupDir|数据库本地备份的路径，将备份源设置成该本地路径|
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/155263562032655_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64700/156576319832655_zh-CN.png)
 
 
-**备份后脚本**
+ **备份后脚本** 
 
-[下载SQL Server的备份后脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成SQL Server的本地备份路径。保存脚本。
+[下载SQL Server的备份后脚本](../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成SQL Server的本地备份路径。保存脚本。
 
 ## 步骤二 创建备份工作流 {#section_lc1_3n3_yfb .section}
 
@@ -52,9 +52,9 @@
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263562032506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/156576319832506_zh-CN.png)
 
-3.  在备份前脚本窗口，输入步骤一中配置好的备份前脚本文件路径。
+3.  在备份前脚本窗口，输入[步骤一](#section_jfl_hgc_wfb)中配置好的备份前脚本文件路径。
 
     **说明：** 脚本路径最多为250个字符。
 
@@ -86,7 +86,7 @@
 
     **说明：** 网络限流可以帮助您在业务高峰期，控制备份的流量，以免影响正常业务。如无此需要，跳过此步骤。
 
-10. 在备份任务列表/创建备份工作流页面，单击**备份后脚本**。在备份后脚本窗口，输入步骤一中配置好的备份后脚本文件路径。单击**确定**。
+10. 在备份任务列表/创建备份工作流页面，单击**备份后脚本**。在备份后脚本窗口，输入[步骤一](#section_jfl_hgc_wfb)中配置好的备份后脚本文件路径。单击**确定**。
 
     **说明：** 脚本路径最多为250个字符。
 
@@ -97,6 +97,7 @@
 
 -   如需取消当前的备份任务，在备份列表中，找到正在进行的备份任务，单击**取消**。
 -   如备份任务失败，在备份列表中，找到正在进行的备份任务，单击**重试**。您还可以单击**错误数**，下载并查看错误报告。
+-   SQL Server数据库不支持数据库文件位于启用了压缩功能的文件系统上，更多数据库安装限制请参见[SQL Server 的默认实例和命名实例的文件位置](https://docs.microsoft.com/en-us/sql/sql-server/install/file-locations-for-default-and-named-instances-of-sql-server?view=sql-server-2017)。
 
 ## 相关操作 {#section_ckm_kk3_yfb .section}
 
