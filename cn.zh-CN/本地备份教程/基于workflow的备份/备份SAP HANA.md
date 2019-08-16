@@ -26,7 +26,7 @@
 
 **备份前脚本**
 
-1.  [下载SAP HANA的备份前脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)。
+1.  [下载SAP HANA的备份前脚本](../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)。
 
 2.  配置下载的脚本，然后保存配置好的脚本。以下是配置SAP HANA备份前脚本的基本配置说明。请根据业务需要配置其他参数。
 
@@ -36,12 +36,12 @@
     |INSTANCE\_ID|数据库ID|
     |HANA\_HOST|主节点的host name|
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263559232500_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/156576310932500_zh-CN.png)
 
 
 **备份后脚本**
 
-[下载SAP HANA的备份后脚本](../../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成SAP HANA的本地备份路径。保存脚本。
+[下载SAP HANA的备份后脚本](../../../../intl.zh-CN/HBR 隐藏/数据库备份脚本.md)，将脚本中的路径配置成SAP HANA的本地备份路径。保存脚本。
 
 ## 步骤三 创建备份工作流 {#section_tjk_bj3_yfb .section}
 
@@ -49,7 +49,7 @@
 
 2.  在备份任务列表/创建备份工作流页面，单击**备份前脚本**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/155263559332506_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64539/156576310932506_zh-CN.png)
 
 3.  在备份前脚本窗口，输入步骤二中配置好的备份前脚本文件路径。
 
