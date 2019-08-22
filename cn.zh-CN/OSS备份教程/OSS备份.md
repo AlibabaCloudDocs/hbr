@@ -17,7 +17,7 @@
 3.  在备份计划页签，单击右上角的**创建备份计划**。
 4.  在新建备份计划弹出框，按照以下说明填写各项参数，然后单击**创建**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955140_zh-CN.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455140_zh-CN.jpg)
 
     |参数|说明|
     |:-|:-|
@@ -35,8 +35,8 @@
 备份计划创建完成后，将按照指定的备份起始时间、备份执行间隔进行OSS备份任务。您还可以在备份计划页签进行如下相关操作：
 
 -   单击操作下的**立即执行**，开始执行备份任务。
--   单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955166_zh-CN.jpg)** \> **暂停计划**，暂停执行中的备份任务。如需再次启动备份任务，单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955166_zh-CN.jpg)** \> **继续计划**。
--   单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955166_zh-CN.jpg)** \> **删除计划**，删除执行中的备份任务。备份计划删除后，该备份计划不会继续执行，但仍保留已备份的数据。
+-   单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455166_zh-CN.jpg)** \> **暂停计划**，暂停执行中的备份任务。如需再次启动备份任务，单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455166_zh-CN.jpg)** \> **继续计划**。
+-   单击操作下的**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455166_zh-CN.jpg)** \> **删除计划**，删除执行中的备份任务。备份计划删除后，该备份计划不会继续执行，但仍保留已备份的数据。
 
 ## 创建恢复任务 {#section_8oi_uhf_0lj .section}
 
@@ -45,11 +45,11 @@
 1.  在恢复任务页签，单击**创建恢复任务**。
 2.  在新建恢复任务弹出框，选择**备份源OSS Bucket**、备份时间段选择**近3个月备份**或**所有历史备份**，**选择一个可以用来恢复的备份**，单击**下一步**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955175_zh-CN.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455175_zh-CN.jpg)
 
 3.  在配置恢复规则页签，选择**OSS Bucket**、选择或输入**OSS Prefix**（OSS Prefix为可选项）：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156594402955553_zh-CN.jpg)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1319194/156646876455553_zh-CN.jpg)
 
     -   恢复规则选择**包含所有文件**，将恢复所选Bucket下的所有文件。
     -   恢复规则选择**包含下列文件**或**排除下列文件**，在输入文件列表框中手动填写文件列表，将按照规则恢复所选Bucket下指定的文件。
