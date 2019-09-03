@@ -28,11 +28,6 @@ If you attempt to create multiple RAM users, you can group RAM users with identi
 3.  In the upper-right corner, click **Create Group** to open the Create Group dialog box.
 4.  Enter a group name and click **OK**.
 
-**Note:** 
-
--   For more information about how to create a group, see [Groups](../../../../intl.en-US/Quick Start/(Old Version) Quick Start/Create a RAM user.md).
--   For more information, see [Obtain an AccessKey for a RAM user](../../../../intl.en-US/FAQ/Common issues/Obtain an AccessKey for RAM users.md).
-
 ## Grant permissions to a RAM user or group {#section_bmt_q5h_yfb .section}
 
 By default, a new RAM user or group does not have any permissions. You need to grant permissions to the RAM user or group before using the user or group to operate resources by using the console or APIs.
@@ -44,7 +39,7 @@ Two types of permissions to use the Hybrid Backup Recovery \(HBR\) service are a
 
 You can grant one of these permissions to a RAM user or group in the RAM console. For more information about how to authorize a RAM user or group, see [Authorize a RAM user](../../../../intl.en-US/Quick Start/(Old Version) Quick Start/Authorize RAM users.md#section_odn_kgf_xdb).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40360/156747472758766_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40360/156747594658766_en-US.jpg)
 
-**Note:** In addition to policies provided by RAM, you can also [create custom policies](../../../../intl.en-US/Quick Start/(Old Version) Quick Start/(Optional) Create a custom policy.md).
+**Note:** In addition to policies provided by RAM, you can also [Create a custom policy](../../../../intl.en-US/User Guide/Policies/Custom policies/Create a custom policy.md#).
 
