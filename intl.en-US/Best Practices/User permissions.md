@@ -44,7 +44,7 @@ Two types of permissions to use the Hybrid Backup Recovery \(HBR\) service are a
 
 You can grant one of these permissions to a RAM user or group in the RAM console. For more information about how to authorize a RAM user or group, see [Authorize a RAM user](../../../../intl.en-US/Quick Start/(Old Version) Quick Start/Authorize RAM users.md#section_odn_kgf_xdb).
 
-![](images/30626_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40360/156747472758766_en-US.jpg)
 
 **Note:** In addition to policies provided by RAM, you can also [create custom policies](../../../../intl.en-US/Quick Start/(Old Version) Quick Start/(Optional) Create a custom policy.md).
 
