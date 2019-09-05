@@ -53,39 +53,39 @@ After downloading a client and certificate, you need to install the client. Afte
 
 3.  In the Deploy OVF Template dialog box, select **Local File**. Click **Browse** to select a downloaded client file, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678562735164_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563235164_en-US.png)
 
 4.  Enter the name of the OVF template, select a location you need to deploy the OVF template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563235165_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563735165_en-US.png)
 
 5.  Select a location where you need to run the deployed template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563435166_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563835166_en-US.png)
 
 6.  Verify the details of the template, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563635167_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564235167_en-US.png)
 
 7.  Select the required virtual disk format, select a datastore to store the deployed OVF template, and then click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678563935168_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564535168_en-US.png)
 
 8.  Select a source network, map the network to a destination network, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564335169_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564835169_en-US.png)
 
 9.  Customize the deployment properties for the software solution, and click **Next**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564535170_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678565735170_en-US.png)
 
 10. View the configuration details, and click **Finish**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678564935171_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678566135171_en-US.png)
 
 11. On the Recent Tasks page, you can view the progress of the deployment task. This process may take a few minutes.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678565535172_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83063/156678566635172_en-US.png)
 
 12. After the OVF template is deployed, turn on the virtual machine that is deployed by using the OVF template.
 13. Open a browser and enter `http://hostname:8011` in the address bar.
