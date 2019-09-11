@@ -5,7 +5,7 @@ After using Hybrid Backup Recovery \(HBR\) to back up SQL Server databases to a 
 **Note:** 
 
 -   When you choose to restore a SQL Server database from incremental backup, HBR automatically uses full backup to restore the database before using incremental backup.
--   To restore the primary database of a SQL Server instance, you need to start the SQL Server instance in single-user mode. For more information, see [Restore the master database](https://docs.microsoft.com/zh-cn/sql/relational-databases/backup-restore/restore-the-master-database-transact-sql?view=sql-server-2017).
+-   To restore the primary database of a SQL Server instance, you need to start the SQL Server instance in single-user mode.
 -   To restore the databases of a SQL Server instance to another SQL Server instance, ensure that the source SQL Server instance version is not later than the destination SQL Server instance version.
 
 ## Procedure {#section_ysg_4dk_dhb .section}
