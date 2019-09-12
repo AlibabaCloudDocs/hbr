@@ -8,21 +8,21 @@ You can restore files to an ECS instance from a backup stored on it or another E
 4.  Locate the target ECS instance, and click **Restore** in the Actions column of the instance.
 5.  In the New Restore Task dialog box, select a Restore Source. 
 
-    -   **From this ECS** 
+    -   From this ECS
 
         If you need to restore data from a backup stored on this ECS instance, you can select this option and perform the following steps.
 
         1.  Click **Next**.
         2.  Select a snapshot, and click **Next**.
         3.  Enter the Restore Path, select files to be restored, and click **Create**.
-    -   **From Other ECS** 
+    -   From Other ECS
 
         If you need to restore data from a backup stored on another ECS instance in the same vault to this ECS instance, you can select this option and perform the following steps.
 
         1.  Select an ECS instance where the backup is located and click **Next**.
         2.  Select a snapshot and click **Next**.
         3.  Enter the Restore Path, select files to be restored, and click **Create**.
-    -   **From Local Client** 
+    -   From Local Client
 
         If you need to restore a backup that is created by a file client from a local data center to this ECS instance, you can select this option and perform the following steps.
 
