@@ -16,7 +16,7 @@ The procedure is as follows:
 
 1.  Log on to the [Hybrid Backup Recovery \(HBR\) console](https://hbr.console.aliyun.com).
 2.  In the left-side navigation pane, click **Overview**.
-3.  Select a backup vault for which you want to create a mirror vault, and click the ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132497/156894562139694_en-US.png) icon in the upper-right corner of the backup vault.
+3.  Select a backup vault for which you want to create a mirror vault, and click the ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/132497/156894579839694_en-US.png) icon in the upper-right corner of the backup vault.
 4.  In the Create Mirror Vault dialog box, select a region where the mirror vault is located.
 
     **Note:** For disaster recovery, you cannot select the region where the source vault is located.
@@ -26,7 +26,7 @@ The procedure is as follows:
 
 ## Restore a SQL Server database from a backup stored in a mirror vault {#section_i0p_j5i_712 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/187890/156894562160303_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/187890/156894579860303_en-US.jpg)
 
 As shown in the preceding figure, a database in SQL Server cluster A is backed up in a backup vault in region A. To restore the database to SQL Server cluster B in region B, you need to log on to the Hybrid Backup Recovery \(HBR\) console on an Elastic Compute Service \(ECS\) instance where SQL Server cluster B is deployed, and register a SQL Server instance in the console. The procedure is as follows:
 
