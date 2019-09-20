@@ -1,4 +1,4 @@
-# 恢复SQL Server {#concept_189256 .concept}
+# 恢复SQL Server {#concept_189256 .task}
 
 您可以将通过混合云备份服务（HBR）备份的SQL Server数据库恢复到源SQL Server中，您还可以根据需要，将同仓库中的其他SQL Server实例数据库恢复到当前的SQL Server实例中。
 
@@ -7,14 +7,16 @@
 -   如需恢复master数据库，在恢复之前SQL Server需要在单用户模式下运行，详情参见[还原master数据库](https://docs.microsoft.com/zh-cn/sql/relational-databases/backup-restore/restore-the-master-database-transact-sql?view=sql-server-2017)。
 -   如需跨实例恢复数据库，请确保需要恢复的SQL Server实例版本等于或低于目的SQL Server实例版本。
 
-## 操作步骤 {#section_ysg_4dk_dhb .section}
+## 创建恢复计划 {#section_ysg_4dk_dhb .section}
+
+请按如下步骤创建恢复计划：
 
 1.  登录[混合云备份管理控制台](https://hbr.console.aliyun.com)。
 2.  在左侧导航栏，选择**本地备份** \> **SQL Server备份**。
 3.  单击**SQL Server实例**页签。
 4.  找到需要恢复的SQL Server实例，在其右侧的操作列表中，单击**恢复**。
 5.  在弹出的新建恢复计划页面，选择需要恢复的数据库所在的SQL Server实例，然后单击**下一步**。
-6.  选择一个需要恢复的数据库，单击**下一步**，然后按照以下说明配置恢复规则：
+6.  选择一个需要恢复的数据库，单击**下一步**，然后按照以下说明配置恢复规则： 
 
     |参数|描述|
     |:-|:-|
@@ -39,9 +41,9 @@
 
 7.  单击**下一步**，确认配置信息，然后单击**创建**。
 
-## 查看、取消恢复任务 {#section_clt_1by_ggb .section}
+## 相关操作 {#section_clt_1by_ggb .section}
 
-您可以查看恢复任务的状态，并可以取消正在执行的恢复任务。具体操作如下：
+您可以查看恢复任务的状态，还可以取消正在执行的恢复任务。具体操作如下：
 
 1.  登录[混合云备份管理控制台](https://hbr.console.aliyun.com)。
 2.  在左侧导航栏，选择**本地备份** \> **SQL Server备份**。
