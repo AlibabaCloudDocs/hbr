@@ -1,14 +1,14 @@
-# Overview {#concept_tmx_14l_ggb .concept}
+# Overview
 
-Hybrid Backup Recovery \(HBR\) is an efficient, secure, cost-effective, and fully managed backup and storage service. You can use HBR to back up the images of local virtual machines and restore these images as needed.
+Hybrid Backup Recovery \(HBR\) is a fully managed online backup service that allows you to back up data to the cloud in an efficient, secure, and cost-effective way. You can use HBR backup client to back up images of on-premises VMware virtual machines \(VMs\). You can then restore the VMs if needed.
 
-This topic includes the following sections:
+You can use the following procedure to back up a VMware VM:
 
--   [Prerequisites](intl.en-US/Back up on-premises severs/Back up virtual machine image/Prerequisites.md)
--   [Back up data from a VMware virtual machine](intl.en-US/Back up on-premises severs/Back up virtual machine image/Back up the image of a VMware virtual machine.md)
--   [Restore data to a VMware virtual machine](intl.en-US/Back up on-premises severs/Back up virtual machine image/Restore a backup image to the source VMware virtual machine.md)
+-   [Prepare for backup](/intl.en-US/Back up on-premises severs/Back up virtual machine image/Preparations.md)
+-   [Back up VMware VM images](/intl.en-US/Back up on-premises severs/Back up virtual machine image/Back up VMware VM images.md)
+-   [Restore VMware VMs from images](/intl.en-US/Back up on-premises severs/Back up virtual machine image/Restore VMware VMs from images to an on-premises vCenter Server.md)
 
-The following sections are related to this topic:
+For information about other features of on-premises VMware VM backup, see the following topic:
 
-[Backup alerts](intl.en-US/Back up on-premises severs/Back up virtual machine image/Backup alerts.md)
+[Configure alert notifications](/intl.en-US/Back up on-premises severs/Back up virtual machine image/Configure alert notifications.md)
 
