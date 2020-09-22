@@ -1,48 +1,47 @@
-# Preparations {#task_473648 .task}
+# Preparations
 
-You can use HBR to back up CSG instances and restore them when necessary. This topic describes the preparations that you need to make before backing up data.
+You can use Hybrid Backup Recovery \(HBR\) to back up shares of Cloud Storage Gateway \(CSG\). You can then restore the shares if needed. This topic describes the preparations that you must make before backup.
 
-## Activate a RAM user {#section_2im_sbo_df8 .section}
+**Note:** You can use the CSG backup service in the following regions: China \(Shanghai\), China \(Hangzhou\), China \(Beijing\), China \(Shenzhen\), China \(Zhangjiakou-Beijing Winter Olympics\), China \(Hohhot\), China \(Hong Kong\), Singapore \(Singapore\), Australia \(Sydney\), US \(Silicon Valley\), and Japan \(Tokyo\). This service will be available in more regions soon.
 
-Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. You can create and manage multiple RAM users within a single Alibaba Cloud account. You can grant different permissions to each RAM user, so that RAM users have different access permissions on Alibaba Cloud resources. Make sure that you have [Created a RAM user](../../../../intl.en-US/User Guide/RAM users/Create a RAM user.md#) and [Created an access key for a RAM user](../../../../intl.en-US/User Guide/Security settings/Access keys/Create an access key for a RAM user.md#) before backing up data.
+## \(Recommended\) Prepare an AccessKey for a RAM user
 
-## Register a CSG instance {#section_ma1_77o_cec .section}
+Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. RAM allows you to create and manage multiple identities under an Alibaba Cloud account, and grant diverse permissions to a single identity or a group of identities. In this way, you can authorize different identities to access different Alibaba Cloud resources.
+
+An AccessKey is required when you activate a backup client. If the AccessKey of an Alibaba Cloud account is leaked, all cloud resources under the account may be exposed to risk. Therefore, we recommend that you use the AccessKey of a RAM user to activate backup clients. Before you back up data, make sure that a RAM user is created and an AccessKey is created for the RAM user. For more information, see[Create a RAM user](/intl.en-US/RAM User Management/Create a RAM user.md)and[Create an AccessKey pair for a RAM user](/intl.en-US/Security Settings/AccessKey pairs/Create an AccessKey pair for a RAM user.md).
+
+## Register a gateway
+
+To register a gateway, perform the following steps:
 
 1.  Log on to the [HBR console](https://hbr.console.aliyun.com).
-2.  Select the region of the CSG instance to be backed up.
-3.  In the left-side navigation pane, click **Storage Gateway Backup**.
-4.  On the Storage Gateway Backup page, click **Register Cloud Gateway** in the upper-right corner.
-5.  In the Register Cloud Gateway dialog box that appears, set the parameters as instructed in the following table.
 
-    |Parameter|Description|
-    |---------|-----------|
-    |Backup Vault Name|Specify the backup vault. A backup vault is a repository used by HBR to store backup data on the cloud. You can back up data from multiple clients to the same vault.     -   If you have created backup vaults:
+2.  In the left-side navigation pane, choose **Backup** \> **CSG Backup**.
 
-Click Select Vault and select a vault from the drop-down list.
+3.  In the top navigation bar, select the region where the gateway resides.
 
-    -   If you have not created any backup vaults:
+4.  In the upper-right corner, click **Register Storage Gateway**.
 
-Click Create Vault, and enter the vault name and description to create a vault. The vault name must not exceed 64 bytes in length.
+5.  In the Register Storage Gateway pane, set the parameters. The following table describes the parameters.
 
- |
-    |Cloud Gateway Cluster|Select the gateway cluster of the CSG instance to be backed up.|
-    |Please select a cloud gateway to backup|Select the CSG instance to be backed up. **Note:** The Storage Gateway Backup service can only back up standard or enhanced file gateways on Alibaba Cloud.
+    |Parameter or section|Description|
+    |--------------------|-----------|
+    |Vault Name|The backup vault where you want to store the backup data. A backup vault is a repository that HBR uses to store backup data. You can use a single vault to store backup data that is received from multiple backup clients. Backup vaults reside in different regions. You can select or create only a backup vault in the current region.     -   If you have created backup vaults, click **Select Vault**, and select a backup vault from the **Vault Name** drop-down list.
+    -   If you have not created backup vaults, click **Create Vault** and specify the **Vault Name** field. The vault name must be 1 to 64 characters in length. |
+    |Gateway Cluster|The cluster where the gateway resides.|
+    |Use HTTPS|Specifies whether to use HTTPS for encrypted data transmission. Note that HTTPS compromises the performance of data transmission. Data that is stored in the backup vault is encrypted, regardless of the setting of this switch. If you modify the setting of this parameter, the modification takes effect on the next migration or restore job.|
+    |Gateways|The gateways whose shares you want to back up. **Note:** You can use HBR to back up standard and enhanced CSG file gateways. |
 
- |
+6.  Click **Create**. HBR then installs a backup client on the ECS instance that hosts each selected gateway.
 
-6.  After the configuration is completed, click **Create**. The system automatically installs the backup client for the CSG instance on the corresponding ECS instance.
 
-## Manage clients of CSG instances {#section_9p9_kli_vhg .section}
+## What to do next
 
-On the Storage Gateway Backup page, click the Cloud Gateway Instance tab, and then locate the target CSG instance.
+On the Storage Gateways tab, you can perform the following operations on a gateway.
 
-|Operation|Procedure|
-|---------|---------|
-|To check the installation status of a client|Make sure that the client status appears as Activated after the client is installed. If the status is Failed, follow the instructions provided in the error message for troubleshooting. After the error is rectified, choose **More** \> **Re-install** in the Actions column.
-
- |
-|To uninstall a client|Choose **More** \> **Uninstall Client** in the Actions column.|
-|To delete a client and the corresponding CSG instance|Choose **More** \> **Delete** in the Actions column. **Note:** Before deleting a client, make sure that the client has no backup job in the Running or Completed status.
-
- |
+|Operation|Description|
+|---------|-----------|
+|Check the installation status of the backup client|If the backup client is installed, the client status is Activated. If the client status is Installation Failed, it indicates that the installation of a backup client fails. Follow the instructions in the error message to troubleshoot the error. After the error is fixed, choose **More** \> **Install Client** in the Actions column. |
+|Uninstall the backup client|Choose **More** \> **Uninstall Client** in the Actions column.|
+|Delete the backup client|To uninstall the backup client and remove the gateway, choose **More** \> **Remove** in the Actions column. **Note:** Before you delete a backup client, make sure that the client has no running or completed backup jobs. |
 
