@@ -1,8 +1,10 @@
-# Where are the logs of a backup client? {#concept_vxj_dgg_xgb .concept}
+# Where are the logs of a backup client?
+
+This topic describes how to view the logs of the hybrid cloud backup client on Linux and Windows systems.
 
 -   Linux
 
-    The path of logs: /opt/alibabacloud/hbr/logs\#![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/131823/156471600439601_en-US.png)
+    The path of logs: /opt/alibabacloud/hbr/logs\#![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/5359917951/p39601.png)
 
 -   Windows
 
