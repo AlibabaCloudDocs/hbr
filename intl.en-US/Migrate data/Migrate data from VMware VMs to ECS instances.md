@@ -128,11 +128,11 @@ After you download the client and certificate, install the client on a VM. You c
 
 3.  In the **Add vCenter Server** pane, set the **Server IP Address**, **Username**, and **Password** parameters. Then, click **Create**.
 
-    If the password contains the following special characters, the vCenter Server instance may fail to be added:
+    The addition of a vCenter Server may fail if the password contains the following special characters:
 
     \` ^ ~ = ; ! / \( \[ \] \{ \} @ $ \\ & \# % +
 
-    **Note:** We recommend that you create a vCenter Server account with the administrator permission as a dedicated account for data backup. We also recommend that you use periods \(.\) as special characters in the password.
+    **Note:** We recommend that you create a vCenter Server account that is dedicated for backup. The password of the account must include periods \(.\) and cannot include other special characters.
 
 
 ## Step 4: Migrate data from a VMware VM
@@ -156,7 +156,7 @@ After you download the client and certificate, install the client on a VM. You c
 **Note:**
 
     -   If Changed Block Tracking \(CBT\) is disabled for the VM, a full synchronization task is run instead of incremental synchronization.
-    -   If incremental synchronization is enabled, HBR automatically creates an image to test whether workloads can be switched to the destination. You are charged by ECS for the image. For more information, see [Billing overview](/intl.en-US/Pricing/Billing overview.md). |
+    -   If incremental synchronization is enabled, HBR automatically creates an image to test whether workloads can be switched to the destination. You are charged by ECS for the image. For more information, see [Billing overview](/intl.en-US/Pricing/Billing items/Billing overview.md). |
 
 3.  In the **Select VMs to Migrate** step, select the source VMs and click **Next**.
 
@@ -190,6 +190,6 @@ After you download the client and certificate, install the client on a VM. You c
         **Note:**
 
         -   If you select **Run an incremental synchronization task before finishing the migration job**, a longer time is required to finish the migration job.
-        -   You are charged for the migration of the VM only the first time you verify the migration or finish the migration job. If you repeatedly perform verifications or if you finish the migration job after a verification, you are not charged. For more information, see [Pricing](https://www.aliyun.com/price/detail/hbr).
+        -   You are charged for the migration of the VM only the first time you verify the migration or finish the migration job. If you repeatedly perform verifications or if you finish the migration job after a verification, you are not charged. For more information, see [Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing).
     -   Click **Cancel** in the Actions column to cancel the running or pending migration job.
 
