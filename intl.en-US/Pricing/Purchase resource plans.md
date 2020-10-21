@@ -6,7 +6,7 @@ Take note of the following items when you purchase HBR resource plans:
 
 -   In the following table, the ✓ mark indicates that you must purchase the resource plan in the scenario. The x mark indicates that resource plan is not required in the scenario.
 -   Resource plans can be used in any applicable scenario. For example, you can purchase backup storage resource plans to deduct storage fees in all backup scenarios. You can also purchase file backup license resource plans to deduct the license fees in both local file backup and ECS file backup scenarios.
--   Traffic fees are billed in the pay-as-you-go method and cannot be deducted by resource plans. For more information, see[Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing).
+-   Traffic fees are billed in the pay-as-you-go method and cannot be deducted by resource plans. For more information, see [Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing).
 
 |Scenario|Backup storage resource plan|File backup license resource plan|VMware VM backup license resource plan|Application backup license resource plan|
 |--------|----------------------------|---------------------------------|--------------------------------------|----------------------------------------|
@@ -20,7 +20,7 @@ Take note of the following items when you purchase HBR resource plans:
 |x|x|✓ Purchase clients based on the number of SQL servers to back up. |
 |Local VMware VM backup|✓ We recommend that you purchase a storage resource plan with a capacity at least 80% of the total disk size of the VMware VMs to back up and upgrade the plan based on further requirements.
 
-|x|✓ Purchase clients based on the total disk size of VMware VMs to back up.
+|x|✓Purchase clients based on the total disk size of VMware VMs to back up.
 
 |x|
 |ECS file backup|✓ You can use [Backup Storage Calculator](https://g.alicdn.com/aliyun/brs/2.7.1/calc.html) to estimate the required backup storage.
