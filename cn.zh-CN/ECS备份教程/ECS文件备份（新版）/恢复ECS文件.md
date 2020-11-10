@@ -20,7 +20,7 @@
 
     您还可以选择**浏览**，查看要恢复的客户端下的所有文件。
 
-    ![2](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/2303552061/p172253.jpg)
+    ![2](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/9544794061/p172253.jpg)
 
 5.  在**选择目的实例**页签，选中要恢复的客户端，然后单击**下一步**。
 
