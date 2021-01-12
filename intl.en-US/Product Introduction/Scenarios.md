@@ -16,5 +16,5 @@ You can use HBR to back up data across multiple local and cloud branches. You ca
 
 ## Back up workflow-based data sources
 
-You can use HBR to back up workflow-based data sources to ensure data security. HBR supports data sources, such as SAP HANA, SQL Server, Oracle, MySQL, MongoDB, and Hyper-V.
+You can use HBR to back up workflow-based data sources to ensure data security. HBR supports data sources, such as SAP HANA, SQL Server, MySQL, and MongoDB.
 
