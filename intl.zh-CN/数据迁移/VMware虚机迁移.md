@@ -17,7 +17,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 -   支持的地域
 
-    目前混合云备份仅支持华北2（北京）、华东2（上海）、华南1（深圳）、华东1（杭州）、华北3（张家口）、中国（香港）、新加坡、美国（硅谷）、印度尼西亚（雅加达）、澳大利亚（悉尼）和德国（法兰克福）地域的VMware虚机迁移，其他地域将陆续开放，敬请期待。
+    混合云备份支持地域目前陆续开放，实际支持地域请以控制台为准。
 
 -   支持的操作系统
 
@@ -61,45 +61,45 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 2.  在左侧导航栏，选中要进行部署的虚机，右键选择**部署 OVF 模板**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6356449951/p35163.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35163.png)
 
     **说明：** 更多关于如何部署OVF模板，请参见[部署OVF模板](https://docs.vmware.com/cn/VMware-vSphere/6.5/com.vmware.vsphere.vm_admin.doc/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html?spm=a2c4g.11186623.2.20.37f4127dVeFZcm)。
 
 3.  在部署OVF模板页面，选择**本地文件**。单击**浏览**选择下载好的客户端文件，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6356449951/p35164.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35164.png)
 
 4.  输入OVF的名称，选择部署位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/3151409951/p68313.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3151409951/p68313.jpg)
 
 5.  选择运行已部署模板的位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6356449951/p35166.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35166.png)
 
 6.  验证模板详细信息，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/6356449951/p35167.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35167.png)
 
 7.  根据需要选择虚拟磁盘格式，选择存储已部署模板文件的位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7356449951/p35168.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35168.png)
 
 8.  为每个源网络选择目标网络，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68314.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68314.jpg)
 
 9.  自定义该软件解决方案的部署属性，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7356449951/p35170.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35170.png)
 
 10. 查看配置数据，然后单击**完成**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/7356449951/p35171.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35171.png)
 
 11. 在近期任务中查看任务状态，等待任务完成。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68331.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68331.jpg)
 
 12. 部署完成后，启动使用OVF模板部署的虚机。
 
@@ -122,7 +122,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 1.  在**迁移网关**页签，单击操作栏下的**查看**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68353.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68353.jpg)
 
 2.  单击右上角的**添加vCenter服务器**。
 
@@ -139,11 +139,11 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 1.  单击操作栏下的**迁移**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68364.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68364.jpg)
 
 2.  在**迁移计划**页签，按照以下说明填写各项参数，然后单击**下一步**。
 
-    ![plan](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p84834.jpg)
+    ![plan](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p84834.jpg)
 
     |参数|说明|
     |--|--|
@@ -156,35 +156,35 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 **说明：**
 
     -   如果虚机禁止了数据块修改跟踪技术（CBT），增量迁移将强制转为全量迁移。
-    -   增量迁移模式下，HBR将自动创建镜像以支持测试拉起，会产生一定的镜像费用，镜像费用由ECS收取。详情请参见[计费概述](/intl.zh-CN/产品定价/计费项/计费概述.md)。 |
+    -   增量迁移模式下，HBR将自动创建镜像以支持测试拉起，会产生一定的镜像费用，镜像费用由ECS收取。详情请参见[计费概述](/intl.zh-CN/产品定价/计费概述.md)。 |
 
 3.  选择**待迁移虚机**，单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68369.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68369.jpg)
 
 4.  在**配置云上ECS**页签，选择**专有网络**、**交换机**、**实例类型**、**实例规格**、**存储类型**、**安全组**、**IP地址类型**、是否**分配公网IP**、是否**恢复后启动系统**，是否**创建系统镜像**，选择**复制配置到所有虚机**或**保存配置到当前虚机**。
 
     **说明：** 选择安全组时，请确保允许出方向的TCP 80、443端口以及UDP 53端口。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p68373.jpg)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68373.jpg)
 
 5.  单击**创建**后，即可启动当前迁移任务。在迁移状态页面，您可以查看迁移进度。
 
-    ![syn](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p84851.jpg)
+    ![syn](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p84851.jpg)
 
     如果使用了增量迁移，待虚机迁移完成后，您可以执行以下操作。
 
     -   单击**同步记录**，您可以查看增量迁移的数据大小、迁移的状态等信息。
 
-        ![syn](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p85372.jpg)
+        ![syn](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p85372.jpg)
 
     -   单击**创建ECS**，在弹出框中选择**迁移验证**或**完成迁移**。
 
-        ![verification](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p85370.jpg)
+        ![verification](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p85370.jpg)
 
         -   单击**迁移验证**，即将以最近一次同步（例如，2020-02-21 20:21:31）的数据创建出ECS，用于验证迁移到ECS的虚机是否工作正常。每台虚机最多可以做3次验证，验证不会中断预设的增量同步。确认进行迁移认证，请单击**确定**，开始创建ECS，待ECS创建完成后，您可以单击**继续迁移**，将清除已经创建的ECS并继续迁移。
 
-            ![continue](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4151409951/p85373.png)
+            ![continue](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p85373.png)
 
         -   单击**完成迁移**，即将以最近一次同步（例如，2020-02-21 20:21:31）的数据创建迁移完成的ECS，并不再进行同步。您也可以选择**完成迁移之前做最后一次增量同步**来将上次同步之后的数据更新到迁移完成的ECS中。
         **说明：**
