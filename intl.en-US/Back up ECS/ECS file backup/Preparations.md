@@ -8,7 +8,6 @@ Before you use HBR to back up files from ECS, note the following information:
 
 -   To achieve the optimal backup speed, we recommend that you run a backup client on an ECS instance that has the following configurations: 64-bit processors, two or more CPU cores, and more than 8 GB available memory. If you need to back up tens of millions of files, 16 GB available memory is recommended.
 -   The volume of data that can be backed up depends on the available memory. If a host has 4 GB available memory, a maximum of one million files or 8 TB data can be backed up.
--   You can use the ECS file backup service in the following regions: China \(Beijing\), China \(Shanghai\), China \(Shenzhen\), China \(Hangzhou\), China \(Qingdao\), China \(Zhangjiakou-Beijing Winter Olympics\), China \(Hohhot\), China \(Hong Kong\), Singapore \(Singapore\), US \(Silicon Valley\), Indonesia \(Jakarta\), Malaysia \(Kuala Lumpur\), Australia \(Sydney\), Germany \(Frankfurt\), and Japan \(Tokyo\). This service will be available in more regions soon.
 
 ## Step 1: Create and assign RAM roles to HBR
 
