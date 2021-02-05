@@ -1,10 +1,15 @@
 # 备份SAP HANA
 
-您可以使用混合云备份服务（HBR）来备份ECS实例中部署的SAP HANA数据库，并在需要时恢复。本文主要为您介绍如何备份SAP HANA的数据库。
+您可以使用混合云备份服务（HBR）来备份ECS实例中部署的SAP HANA数据库，并在需要时恢复。本文主要为您介绍如何备份SAP HANA数据库。
 
 ## 前提条件
 
-您已经完成了[准备工作](/intl.zh-CN/ECS备份教程/SAP HANA备份/准备工作.md)。
+-   已完成[准备工作](/intl.zh-CN/ECS备份教程/SAP HANA备份/准备工作.md)。
+-   已完成SAP HANA实例注册和节点验证。具体操作，请参见[注册SAP HANA实例](/intl.zh-CN/ECS备份教程/SAP HANA备份/部署SAP HANA/注册SAP HANA实例.md)和[验证SAP HANA节点](/intl.zh-CN/ECS备份教程/SAP HANA备份/部署SAP HANA/验证SAP HANA节点.md)。
+
+## 注意事项
+
+同地域只支持在同一个备份仓库的实例之间进行恢复，如需要在不同实例之间恢复，请将相应的实例注册到同一个备份仓库。
 
 ## 创建备份计划
 
@@ -12,7 +17,7 @@
 
 1.  登录[混合云备份管理控制台](https://hbr.console.aliyun.com)。
 
-2.  在左侧导航栏，单击**备份** \> **ECS应用备份** \> **SAP HANA**。
+2.  在左侧导航栏，单击**备份** \> **SAP HANA**。
 
 3.  单击**SAP HANA实例**页签。
 
@@ -24,7 +29,7 @@
 
 6.  在配置备份计划页签，填写各项参数。
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/0560129951/p35977.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0560129951/p35977.png)
 
     |参数|是否必需|说明|
     |--|----|--|
@@ -49,7 +54,7 @@ SAP HANA备份的默认保留时间是10年。您可以根据以下步骤自定�
 
 2.  找到目标实例，单击实例链接。
 
-    ![SAP HANA](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/0560129951/p103891.jpg)
+    ![SAP HANA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0560129951/p103891.jpg)
 
 3.  单击**数据库**页签，找到目标数据库并在其右侧选择**更多** \> **设置保留时间**。
 
@@ -67,7 +72,7 @@ SAP HANA备份的默认保留时间是10年。您可以根据以下步骤自定�
     |保留任务执行时间|选择每天执行保留任务的时间。时间精确到秒。 **说明：** 建议避开备份任务繁忙或者其他业务繁忙的时间段。 |
     |备份保留时间|选择保留备份数据的时间。 单位：天、周、月、年。最短保留时间为1天，最长保留时间为10年。
 
- **说明：** HBR HANA备份保留时间到期后，备份服务会自动清理过期的HBR BACKINT备份与文件备份相关的catalog记录以及数据，清理后不可恢复。请根据实际情况谨慎配置备份保留时间。 |
+**说明：** HBR HANA备份保留时间到期后，备份服务会自动清理过期的HBR BACKINT备份与文件备份相关的catalog记录以及数据，清理后不可恢复。请根据实际情况谨慎配置备份保留时间。 |
 
 5.  单击**创建**。
 
@@ -88,7 +93,7 @@ SAP HANA备份的默认保留时间是10年。您可以根据以下步骤自定�
     4.  在备份计划列表中查看备份计划的信息及状态。
     5.  在备份任务的操作列表中，您可以根据需要管理备份计划。您可以选择**编辑**备份计划、**立即执行**、**暂停计划**、**继续计划**和**删除计划**。删除备份计划后，该计划不会再执行，已完成的备份会为您保留。
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/0560129951/p35978.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0560129951/p35978.png)
 
 -   查看或取消备份任务
 
