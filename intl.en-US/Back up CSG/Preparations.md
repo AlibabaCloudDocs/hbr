@@ -4,11 +4,11 @@ You can use Hybrid Backup Recovery \(HBR\) to back up shares of Cloud Storage Ga
 
 **Note:** You can use the CSG backup service in the following regions: China \(Shanghai\), China \(Hangzhou\), China \(Beijing\), China \(Shenzhen\), China \(Zhangjiakou-Beijing Winter Olympics\), China \(Hohhot\), China \(Hong Kong\), Singapore \(Singapore\), Australia \(Sydney\), US \(Silicon Valley\), and Japan \(Tokyo\). This service will be available in more regions soon.
 
-## \(Recommended\) Prepare an AccessKey for a RAM user
+## \(Recommended\) Prepare an AccessKey pair for a RAM user
 
-Resource Access Management \(RAM\) is an Alibaba Cloud service that helps you manage user identities and access to your cloud resources. RAM allows you to create and manage multiple identities under an Alibaba Cloud account, and grant diverse permissions to a single identity or a group of identities. In this way, you can authorize different identities to access different Alibaba Cloud resources.
+Resource Access Management \(RAM\) is a service provided by Alibaba Cloud. It allows you to create and manage multiple identities under an Alibaba Cloud account and then grant diverse permissions to a single identity or a group of identities. In this way, you can authorize different identities to access different Alibaba Cloud resources.
 
-An AccessKey is required when you activate a backup client. If the AccessKey of an Alibaba Cloud account is leaked, all cloud resources under the account may be exposed to risk. Therefore, we recommend that you use the AccessKey of a RAM user to activate backup clients. Before you back up data, make sure that a RAM user is created and an AccessKey is created for the RAM user. For more information, see[Create a RAM user](/intl.en-US/RAM User Management/Create a RAM user.md)and[Create an AccessKey pair for a RAM user](/intl.en-US/Security Settings/AccessKey pairs/Create an AccessKey pair for a RAM user.md).
+An AccessKey pair is required when you activate a backup client. The AccessKey pair is an identity credential. If an AccessKey pair of your Alibaba Cloud account is used, all cloud resources that belong to the account are exposed to risks. Therefore, we recommend that you use an AccessKey pair of a RAM user to activate backup clients. Before you back up data, make sure that a RAM user is created and an AccessKey pair is created for the RAM user. For more information, see [Create a RAM user](/intl.en-US/RAM User Management/Create a RAM user.md) and [Create an AccessKey pair for a RAM user](/intl.en-US/Security Settings/AccessKey pairs/Create an AccessKey pair for a RAM user.md).
 
 ## Register a gateway
 
