@@ -8,7 +8,7 @@ HBR consumes a large amount of memory resources when it backs up data such as fi
 
 1.  Log on to the host from which files are backed up.
 2.  Go to the installation directory of the HBR client.
-3.  Create a file named `hbr.config` in the folder`client`.
+3.  Create a file named `hbr.config` in the folder `client`.
 
     **Note:**
 
