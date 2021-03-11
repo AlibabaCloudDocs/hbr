@@ -38,7 +38,7 @@
 
 6.  单击**创建**。
 
-7.  创建成功恢复任务后，系统开始恢复数据库。在**计划**页签，可以看到您创建的恢复任务。
+7.  创建成功恢复任务后，系统开始恢复数据库。在**恢复任务**页签，可以看到您创建的恢复任务。
 
     ![restore](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/5173191161/p232672.png)
 
