@@ -58,7 +58,7 @@ The following table lists the advantages of HBR over an on-premises backup syste
 |Backup source|The host on which the data to be backed up is stored, such as a server, a virtual machine, or an ECS instance. |
 |Client|The client that you install on a backup source to back up and restore data. You must install an appropriate client for different backup sources.
 
-Each client supports resumable upload and timed retry to guarantee backup stability. In this way, data can be backed up even when short-term network jitter occurs. |
+Each client supports timed retry to guarantee backup stability. In this way, data can be backed up even when short-term network jitter occurs. |
 |Region|The physical location of an Alibaba Cloud IDC. After a resource is created, you cannot change the region of the resource. For more information, see [Regions and zones](). |
 |Backup vault|The HBR cloud backup warehouse used to store backup data in the cloud. Backup data from multiple clients can be stored in the same vault. This helps you manage the backup data and reduce management time and costs.
 
