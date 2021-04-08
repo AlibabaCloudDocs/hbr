@@ -1,14 +1,14 @@
 # Restore an ECS instance
 
-When an ECS instance encounters a system failure or an error operation, you can roll back the instance by cloning or rolling back a backup point. This topic describes how to restore an ECS instance.
+If an ECS instance encounters a system failure or an error operation, you can roll back the instance by cloning or rolling back a backup point. This topic describes how to restore an ECS instance.
 
 ## Clone and roll back an ECS instance
 
-When an ECS instance encounters a system failure or an error operation, you can roll back the instance by cloning or rolling back a backup point.
+If an ECS instance encounters a system failure or an error operation, you can roll back the instance by cloning or rolling back a backup point.
 
 1.  On the **Protected ECS Instances** tab, find the ECS instance.
 
-2.  Click the ![+](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/3501817161/p259616.png) icon before the ECS instance.
+2.  Click the ![jia](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8874887161/p261864.png) icon before the ECS instance.
 
 3.  On the **ECS Backup History** tab, select a backup point.
 
