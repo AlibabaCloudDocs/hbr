@@ -6,7 +6,7 @@
 
 ECS整机保护通过周期性的云盘备份策略，为ECS整机（或者指定云盘）提供备份保护，从而实现长期低成本的保护。
 
-![guide](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7265887161/p261899.png)
+![ecs](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7337728161/p262869.png)
 
 ## 步骤1：添加ECS
 
