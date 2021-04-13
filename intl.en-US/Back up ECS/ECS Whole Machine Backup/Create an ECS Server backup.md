@@ -6,7 +6,7 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud backup servi
 
 The ECS instance protection feature allows you to protect an ECS instance or specified disks by using a periodic disk backup strategy. This ensures long-term and low-cost protection.
 
-![guide](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4301397161/p261922.png)
+![ecs](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6995728161/p262868.png)
 
 ## Step 1: Add an ECS instance
 
