@@ -75,9 +75,7 @@ The application-consistent backup feature can back up the data in memory and the
 -   Enable the application-consistent backup feature for a Windows ECS instance
     1.  Log on to the [HBR console](https://hbr.console.aliyun.com/).
     2.  Select a protected ECS instance. Select **Add ECS instances** .
-    3.  On the **Edit Plan** page, specify the application-consistency backup parameters.
-
-        If you select **Enable Application-consistent Backup**, an application-consistent backup is created.
+    3.  On the **Create ECS Protection Plan** page, select **Enable Application-consistent Backup**, an application-consistent backup is created.
 
         **Note:** If the Cloud Assistant client is not installed on your instance, the client is automatically installed when the backup is created after you select **Enable Application-consistent Backup**.
 
