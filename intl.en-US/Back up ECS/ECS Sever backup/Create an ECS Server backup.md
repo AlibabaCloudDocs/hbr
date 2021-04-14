@@ -1,6 +1,6 @@
 # Create an ECS Server backup
 
-Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud backup service to provide agentless backup for Elastic Compute Service \(ECS\) instances and disks. HBR can create crash-consistent snapshots for all disk categories, including system and data disks. You can use these snapshots to back up or restore an entire disk.
+Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot service to provide agentless backup for Elastic Compute Service \(ECS\) instances and disks. HBR can create crash-consistent backups for all disk categories, including system and data disks. You can use these backups to restore an entire disk.
 
 ## Background
 
