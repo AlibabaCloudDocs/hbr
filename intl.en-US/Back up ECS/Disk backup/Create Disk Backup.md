@@ -21,7 +21,7 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
 
 ## Step 2：Configure Backup Plan
 
-1.  Select **Backup Type**。
+1.  Select **Backup Type**.
 
     -   Manual backup
 
