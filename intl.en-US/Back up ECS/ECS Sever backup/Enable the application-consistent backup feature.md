@@ -2,7 +2,7 @@
 
 Hybrid Backup Recovery \(HBR\) works with Cloud Assistant and the snapshot service to provide the application-consistent backup feature. Application-consistent backups can be used for rollbacks to avoid log rollbacks when applications such as databases start. This ensures that the applications start in a consistent state.
 
--   The instance allows access to the Internet. A public IP address is configured or an elastic IP address \(EIP\) is associated.
+-   The instance allows access from the Internet. A public IP address is configured or an elastic IP address \(EIP\) is associated.
 -   The instance runs one of the following operating systems:
     -   Windows: Windows Server 2019, Windows Server 2016, and Windows Server 2012.
     -   Linux: CentOS 7.6 or later, Ubuntu 18.04 or later, and Alibaba Cloud Linux 2 \(2.1903 LTS 64-bit\).
@@ -40,7 +40,7 @@ The application-consistent backup feature can back up the data in memory and the
 
     ![Snapshot policy](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6800666161/p249921.png)
 
-    Create the AppSnapshotPolicy policy to grant the permissions to query snapshot details, create snapshots, configure tags, and query disk details. You can use the following policy:
+    Create the AppSnapshotPolicy policy to grant the permissions to query snapshot details, create snapshots, configure tags, and then query disk details. You can use the following policy:
 
     ```
     {
@@ -67,18 +67,18 @@ The application-consistent backup feature can back up the data in memory and the
 
     ![Grant permissions](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6800666161/p250505.png)
 
-5.  Bind the AppSnapshotRoleName RAM role to the ECS instance. For more information about how to bind a RAM role to an ECS instance, see [Bind an instance RAM role](/intl.en-US/Security/Instance RAM roles/Bind an instance RAM role.md).
+5.  Attach the AppSnapshotRoleName RAM role to the ECS instance. For more information about how to attach a RAM role to an ECS instance, see [Bind an instance RAM role](/intl.en-US/Security/Instance RAM roles/Bind an instance RAM role.md).
 
 
 ## Step 2: Enable the application-consistent backup feature
 
 -   Enable the application-consistent backup feature for a Windows ECS instance
     1.  Log on to the [HBR console](https://hbr.console.aliyun.com/).
-    2.  Select the protected ECS instance. Select **Manual Protection**.
-    3.  On the **Edit Plan** page, configure application-consistency backup parameters.
+    2.  Select a protected ECS instance. Select **Add ECS instances** .
+    3.  On the **Edit Plan** page, specify the application-consistency backup parameters.
 
-        -   If you select **Enable Application-consistent Backup** and **Contain Writers by Default**, an application-consistent backup is created.
-        -   If you select only **Enable Application-consistent Backup**, a file-system consistent backup is created.
+        If you select **Enable Application-consistent Backup**, an application-consistent backup is created.
+
         **Note:** If the Cloud Assistant client is not installed on your instance, the client is automatically installed when the backup is created after you select **Enable Application-consistent Backup**.
 
     4.  Click **OK**.
@@ -91,8 +91,18 @@ The application-consistent backup feature can back up the data in memory and the
         -   Application post-thaw script: Configure the script to allow only the root user to have the read, write, and execute permissions on the script. Set the save path to /tmp/postscript.sh.
         **Note:** If the script configurations such as permissions, save path, or file name are invalid, a file-system consistent backup is created.
 
+        You can reference the following application-consistent scripts:
+
+        -   Click [here](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/206129/cn_zh/1618215539272/Linux-MySQL-Scripts.tar.gz) to download the MySQL application-consistent script.
+
+            After you download and deploy the script, you must set the password of a MySQL database in the script.
+
+        -   Click [here](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/206129/cn_zh/1618215573447/Linux-Oracle-Scripts.tar.gz) to download the Oracle application-consistent script.
+
+            After you download and deploy the script, you must set the path to install an Oracle database in the script.
+
     2.  Log on to the [HBR console](https://hbr.console.aliyun.com/).
-    3.  Select the protected ECS instance. Select **Manual Protection**.
+    3.  Select a protected ECS instance. Select **Protect Now**.
     4.  On the **Edit Plan** page, configure application-consistency backup parameters.
 
         -   If you select **Enable Application-consistent Backup** and **Enable File System Freeze and Thaw** and configure valid scripts, an application-consistent backup is created.
