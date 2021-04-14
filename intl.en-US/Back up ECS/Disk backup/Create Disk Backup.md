@@ -46,6 +46,6 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
         |**Retention Period of Replication**|The retention period of the backup data in the destination region.         -   **Keep For**: You can specify a retention period. Valid values: 1 to 65536. Unit: days.
         -   **Continuous Retention**: Backups in the destination region are always retained. |
 
-2.  Click **OK**。
+2.  Click **OK**.
 
 
