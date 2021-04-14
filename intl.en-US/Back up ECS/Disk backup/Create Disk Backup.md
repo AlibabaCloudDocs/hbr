@@ -1,8 +1,10 @@
 # Create Disk Backup
 
-Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot service to provide agentless backup for Elastic Compute Service \(ECS\) instances and disks. HBR can create crash-consistent snapshots for all disk categories, including system and data disks. You can use these snapshots to back up or restore an entire disk.
+Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot service to provide agentless backup for Elastic Compute Service \(ECS\) instances and disks. HBR can create crash-consistent backup for all disk categories, including system and data disks. You can use these backups to restore an entire disk.
 
-## Procedure
+## Step 1: Select Disk
+
+**Note:** When you add an ECS instance and disks, you must make sure that the disks are in the **In Use** or **Unattached** state. If the disks are in the In Use state, the ECS instance must be in the **Running** or **Stopped** state.
 
 1.  Log on to the [HBR console](https://hbr.console.aliyun.com/).
 
@@ -16,7 +18,10 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
 
     If you want to protect only some of the disks, disable **Protect All Disks**.
 
-5.  Configure a backup plan.
+
+## Step 2：Configure Backup Plan
+
+1.  Select **Backup Type**。
 
     -   Manual backup
 
@@ -26,21 +31,21 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
 
     -   Automatic backup
 
-        If you use this method, specify the following parameters.
+        If you use this method, you can select an existed backup policy. You can also click **Create Backup Policy** to configure a new backup policy and specify the following parameters.
 
         |Parameter|Description|
         |---------|-----------|
-        |**Plan Name**|The name of the custom plan.|
-        |**Creation Time**|The time when the backup job was created.|
-        |**Backup Interval**|The interval between backups.|
+        |**Policy Name**|The name of the custom plan.|
+        |**Backup Time**|The time when the backup job was created.|
+        |**Backup Week**|The interval between backups.|
         |**Retention Period**|The retention period of the backup data in the source region.         -   **Keep For**: You can specify a retention period. Valid values: 1 to 65536. Unit: days.
         -   **Continuous Retention**: Backups in the destination region are always retained. |
         |**Cross-region Replication**|If you enable Cross-region Replication, backups created by this backup plan are automatically replicated to the destination region.         -   Backups can be replicated between the China \(Hong Kong\) and Singapore \(Singapore\) regions.
         -   If the ECS instance is affected by viruses or data loss is caused by accidental deletion, you can use backups in the source region or backups replicated to the destination region to create an instance or disk to restore data. |
         |**Destination Region**|The region to which you replicate the backups.|
-        |**Replicated Backup Point Retention Period**|The retention period of the backup data in the destination region.         -   **Keep For**: You can specify a retention period. Valid values: 1 to 65536. Unit: days.
+        |**Retention Period of Replication**|The retention period of the backup data in the destination region.         -   **Keep For**: You can specify a retention period. Valid values: 1 to 65536. Unit: days.
         -   **Continuous Retention**: Backups in the destination region are always retained. |
 
-6.  Click **OK**.
+2.  Click **OK**。
 
 
