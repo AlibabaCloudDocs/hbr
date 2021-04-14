@@ -43,7 +43,12 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
         |**Cross-region Replication**|If you enable Cross-region Replication, backups created by this backup plan are automatically replicated to the destination region.         -   Backups can be replicated between the China \(Hong Kong\) and Singapore \(Singapore\) regions.
         -   If the ECS instance is affected by viruses or data loss is caused by accidental deletion, you can use backups in the source region or backups replicated to the destination region to create an instance or disk to restore data. |
         |**Destination Region**|The region to which you replicate the backups.|
-        |**Retention Period of Replication**|The retention period of the backup data in the destination region.         -   **Keep For**: You can specify a retention period. Valid values: 1 to 65536. Unit: days.
+        |**Retention Period of Replication**|The retention period of the backup data in the destination region.         -   **Keep For**: You can specify a retention period.
+
+Valid values: 1 to 65536
+
+Unit: days
+
         -   **Continuous Retention**: Backups in the destination region are always retained. |
 
 2.  Click **OK**.
