@@ -5,7 +5,7 @@ Subscription \(resource plans\) is a billing method that allows you to pay for r
 Before you purchase HBR resource plans, take note of the following information:
 
 -   Resource plans can be used in all the applicable scenarios. For example, you can purchase resource plans for backup storage to deduct storage fees in all backup scenarios. You can also purchase resource plans for file backup license. This can be used to deduct the license fees in both local file backup and ECS file backup scenarios.
--   You cannot deduct traffic fees from the resource plans that you purchase. For more information about pay-as-you-go billing method, see[Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing).
+-   You cannot deduct traffic fees from the resource plans that you purchase. For more information about pay-as-you-go billing method, see [Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing).
 
 HBR resource plans are divided into two categories. One category is used to back up ECS-hosted databases. The other category is used in other scenarios. The following table provides further details.
 
