@@ -19,7 +19,7 @@ Hybrid Backup Recovery \(HBR\) is integrated with the Alibaba Cloud snapshot ser
     If you want to protect only some of the disks, disable **Protect All Disks**.
 
 
-## Step 2：Configure Backup Plan
+## Step 2: Configure Backup Plan
 
 1.  Select **Backup Type**.
 
