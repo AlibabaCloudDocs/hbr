@@ -1,36 +1,42 @@
-# Limits {#concept_89022_zh .concept}
+# Limits
 
-## Back up files {#section_cm5_hdy_pfb .section}
+This topic describes the limits of Hybrid Backup Recovery \(HBR\).
 
--   Windows clients support Volume Shadow Copy Service \(VSS\). You can only create a single VSS snapshot at a time.
+## Back up files
 
--   An incomplete backup occurs if one or more files are changed by other applications during the backup job. The status of the backup job is displayed as partially completed when the backup job is complete. You must ensure the integrity of data in each backup job.
+-   Windows clients support Volume Shadow Copy Service \(VSS\). You can create only one single VSS snapshot at a time.
+-   If a file is being modified by other applications but the applications have read permissions on the file during a backup job, an incomplete backup occurs. You must ensure the integrity of backup data at the application layer.
+-   If one or more files are locked by processes or the permissions on the files are disabled during a backup job, an incomplete backup occurs. The status of the backup job is displayed as partially completed when the job ends.
 
--   During a backup job, if one or more files are locked by processes or cannot be read by the backup job, this results in an incomplete backup of data. The status of the backup job is displayed as partially completed when the backup job is complete.
+## VMware VM backup
 
-
-## Back up virtual machines {#section_jn5_286_hh5 .section}
-
--   You must install a VCenter Web Client \(5.5, 6.0, or 6.5\) on each virtual machine for which a backup is to be created.
-
+-   You must install a VCenter Web Client \(5.5, 6.0, or 6.5\) on each virtual machine for which you want to create a backup.
 -   A VCenter client and ESXi hypervisor must allow access from a backup gateway by using a fully qualified domain name \(FQDN\) or an IP address.
+-   If you want to back up a VM, you cannot create snapshots for the VM. Otherwise, you will be prompted the following message when you select the VM: You cannot back up the virtual machine because you have already created a snapshot. If a snapshot exists, you must delete it before you can back up the VM.
+-   You cannot back up VMs that have SCSI devices because vSphere VMs do not support shared SCSI devices.
+-   The name of a VM that you want to back up cannot contain the following characters.
 
--   Snapshots cannot exist if you want to back up a virtual machine. Otherwise, you will be prompted a message when selecting a virtual machine: You cannot back up the virtual machine because you have already created a snapshot of the virtual machine. If a snapshot exists, you can delete it.
+    \` ^ ~ = ; ! / \( \) \[ \] \{ \} @ $ \\ & \# % +
 
--   You cannot back up virtual machines that have SCSI devices because vSphere virtual machines do not support shared SCSI devices.
+-   If you use Changed Block Tracking \(CBT\) to perform an incremental backup for a VM, the backup fails in the following scenarios:
+    -   The hardware version of the VM is earlier than version 7.
+    -   CBT is disabled on the VM.
+    -   The disk of the VM uses raw device mapping \(RDM\) in physical compatibility mode.
+    -   The disk mode of the VM is independent\_persistent or independent\_nonpersistent.
 
--   The name of a virtual machine to be backed up cannot contain the following characters.
+## Back up data from an SAP HANA database on an ECS instance
 
-    \` ^ ~ = ; ! / \( \[ \] \{ \} @ $ \\ & \# % +
+You can install only one SAP HANA instance on an ECS instance. Otherwise, you will be prompted the following error message: Failed to install SAP HANA.
 
--   When you attempt to use Changed Block Tracking \(CBT\) to perform an incremental backup for a virtual machine, the backup cannot be performed in the following scenarios:
+## Back up data from an SQL Server database on an ECS instance
 
-    -   The hardware version of the virtual machine is earlier than version 7.
+You can use HBR to back up data from the following supported versions of SQL Server databases.
 
-    -   CBT is disabled on the virtual machine.
-
-    -   The disk of the virtual machine uses raw device mapping \(RDM\) in physical compatibility mode.
-
-    -   The disk mode of the virtual machine is independent\_persistent or independent\_nonpersistent.
-
+|Version|Full backup|Differential backup|Log backup|Data restoration|
+|:------|:----------|:------------------|:---------|:---------------|
+|SQL Server 2008R2|Yes|Yes|Yes|Yes|
+|SQL Server 2012|Yes|Yes|Yes|Yes|
+|SQL Server 2014|Yes|Yes|Yes|Yes|
+|SQL Server 2016|Yes|Yes|Yes|Yes|
+|SQL Server 2017|Yes|Yes|Yes|Yes|
 
