@@ -32,7 +32,7 @@
 
     **说明：** 您首次试用可以享受免费备份计划，计划到期日期为创建备份计划之日起30天内。
 
-    ![nas1](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3966519161/p267463.png)
+    ![nas1](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0281619161/p267531.png)
 
     1.  按如下说明填写基础设置中涉及的各项参数。
 
