@@ -52,7 +52,7 @@ HBR is authorized and a client is installed. For more information, see [Preparat
 
     You can add multiple clients to a client group to concurrently perform an archive job. You can also select an existing client group. Perform the following steps to create a client group:
 
-    1.  In the Client Group From field, select **New Backup Client Group**. Enter a **client group name**and add the required backup clients to the client group.
+    1.  In the Client Group From field, select **New Backup Client Group**. Enter a **client group name** and add the required backup clients to the client group.
     2.  Click **Next**.
 6.  Configure a data analysis plan.
 
