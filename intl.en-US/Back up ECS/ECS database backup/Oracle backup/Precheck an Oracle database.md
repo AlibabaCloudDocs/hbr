@@ -4,11 +4,15 @@ Before you use Hybrid Backup Recovery \(HBR\) to back up an Oracle database, you
 
 After you register an Oracle instance, you can precheck the instance to identify conditions that may cause backup failure. This way, you can prevent backup failure in advance. To start a precheck, perform the following steps:
 
-1.  In the left-side navigation pane, choose **Backup** \> **ECS Database Backup**. On the ECS Database Backup page, click **Oracle** in the top navigation bar.
+1.  Log on to the [HBR console](https://hbr.console.aliyun.com).
 
-2.  On the Database Instance tab, find the Oracle instance that you want to precheck, and click **Precheck** in the **Actions** column.
+2.  In the left-side navigation pane, choose **Backup** \> **ECS Database Backup**. On the ECS Database Backup page, click **Oracle** in the top navigation bar.
 
-3.  On the **Backup Precheck** page, click **Start Check**.
+3.  Select the region where the Oracle instance to be backed up resides.
+
+4.  On the Database Instance tab, find the Oracle instance that you want to precheck, and click **Precheck** in the **Actions** column.
+
+5.  On the **Backup Precheck** page, click **Start Check**.
 
     You can click **View Last Precheck Result** to view the result of the most recent backup precheck. The following table describes the check items of the precheck.
 
@@ -20,7 +24,7 @@ After you register an Oracle instance, you can precheck the instance to identify
     |Oracle database status|Checks whether the Oracle databases in the preceding instance is in normal status. If the check fails, you cannot back up or recover the prompted Oracle databases.|
     |Archive mode|Check whether the archive mode of the Oracle instance is normal. If the check fails, you cannot back up the Oracle databases that are deployed on the ECS instance.|
 
-4.  The precheck requires about one minute to complete. The following figure indicates that the precheck is complete.
+6.  The precheck requires about one minute to complete. The following figure indicates that the precheck is complete.
 
     If a check item fails the precheck, check whether the failure affects backup and recovery of the database.
 
