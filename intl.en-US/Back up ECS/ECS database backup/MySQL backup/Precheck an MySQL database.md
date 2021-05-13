@@ -6,7 +6,7 @@ After you register a MySQL instance, you can precheck the instance to identify c
 
 1.  In the left-side navigation pane, choose **Backup** \> **ECS Database Backup**. On the ECS Database Backup page, click **MySQL** in the top navigation bar.
 
-2.  On the Database Instancestab, find the MySQL instance that you want to precheck, and click **Precheck** in the **Actions** column.
+2.  On the Database Instances tab, find the MySQL instance that you want to precheck, and click **Precheck** in the **Actions** column.
 
 3.  On the **Backup Precheck** page, click **Start Check**.
 
