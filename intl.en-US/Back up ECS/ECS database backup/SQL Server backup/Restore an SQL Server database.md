@@ -4,7 +4,7 @@ After you use Hybrid Backup Recovery \(HBR\) to back up an SQL Server database t
 
 ## Prerequisites
 
-The SQL Server database is backed up. For more information, see [t2037309.md\#]().
+The SQL Server database is backed up.
 
 ## Background information
 
