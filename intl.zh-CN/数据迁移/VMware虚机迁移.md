@@ -1,10 +1,11 @@
 # VMware虚机迁移
 
-本文介绍如何在混合云备份控制台将线下VMware虚机从一个主机或存储位置迁移上云。
+本文介绍如何在混合云备份控制台将线下VMware虚拟机从一个主机或存储位置迁移上云。
 
 ## 前提条件
 
-迁移前务必保证系统盘有至少1 GB的可用空间。待迁移虚机为Linux系统时，系统引导程序GRUB须为1.99及以上版本。
+-   若您的Linux虚拟机使用LVM（Logical Volume Manager）卷作为系统盘，则虚拟机迁移服务暂时无法支持。
+-   迁移前务必保证系统盘有至少1 GB的可用空间。待迁移虚拟机为Linux系统时，系统引导程序GRUB须为1.99及以上版本。
 
 **说明：**
 
@@ -13,7 +14,7 @@
 
 ## 背景信息
 
-VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的无代理整机迁移功能，其原理是基于VMware的快照以及磁盘级别的数据读取功能，将虚机整机全盘迁移到ECS上。
+VMware虚拟机迁移服务主要针对VMware环境的虚拟机提供非侵入式的无代理整机迁移功能，其原理是基于VMware的快照以及磁盘级别的数据读取功能，将虚拟机整机全盘迁移到ECS上。
 
 -   支持的地域
 
@@ -21,7 +22,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 -   支持的操作系统
 
-    VMware虚机迁移服务支持如下操作系统：CentOS、Ubuntu、CoreOS、Aliyun、Debian、Gentoo、SUSE、OpenSUSE、FreeBSD、RedHat、Windows Server 2003、Windows Server 2008、Windows Server 2012、Windows Server 2016、Windows 7、Customized Linux、Mars以及NeoKylin。
+    VMware虚拟机迁移服务支持如下操作系统：CentOS、Ubuntu、CoreOS、Aliyun、Debian、Gentoo、SUSE、OpenSUSE、FreeBSD、RedHat、Windows Server 2003、Windows Server 2008、Windows Server 2012、Windows Server 2016、Windows 7、Customized Linux、Mars以及NeoKylin。
 
 
 ## 步骤1：创建迁移网关
@@ -59,53 +60,53 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
     **说明：** 混合云备份目前仅支持VCenter Server 5.5、6.0或6.5版本。
 
-2.  在左侧导航栏，选中要进行部署的虚机，右键选择**部署 OVF 模板**。
+2.  在左侧导航栏，选中要进行部署的虚拟机，右键选择**部署OVF模板**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35163.png)
+    ![OVF](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35163.png)
 
-    **说明：** 更多关于如何部署OVF模板，请参见[部署OVF模板](https://docs.vmware.com/cn/VMware-vSphere/6.5/com.vmware.vsphere.vm_admin.doc/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html?spm=a2c4g.11186623.2.20.37f4127dVeFZcm)。
+    **说明：** 关于如何部署OVF模板，更多信息，请参见[部署OVF模板](https://docs.vmware.com/cn/VMware-vSphere/6.5/com.vmware.vsphere.vm_admin.doc/GUID-AFEDC48B-C96F-4088-9C1F-4F0A30E965DE.html?spm=a2c4g.11186623.2.20.37f4127dVeFZcm)。
 
 3.  在部署OVF模板页面，选择**本地文件**。单击**浏览**选择下载好的客户端文件，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35164.png)
+    ![选择模板](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35164.png)
 
 4.  输入OVF的名称，选择部署位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3151409951/p68313.jpg)
+    ![选择名称和位置](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3151409951/p68313.jpg)
 
 5.  选择运行已部署模板的位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35166.png)
+    ![选择资源](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35166.png)
 
 6.  验证模板详细信息，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35167.png)
+    ![查看详情](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6356449951/p35167.png)
 
 7.  根据需要选择虚拟磁盘格式，选择存储已部署模板文件的位置，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35168.png)
+    ![选择存储](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35168.png)
 
 8.  为每个源网络选择目标网络，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68314.jpg)
+    ![选择网络](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68314.jpg)
 
 9.  自定义该软件解决方案的部署属性，然后单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35170.png)
+    ![自定义模板](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35170.png)
 
 10. 查看配置数据，然后单击**完成**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35171.png)
+    ![配置数据](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7356449951/p35171.png)
 
 11. 在近期任务中查看任务状态，等待任务完成。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68331.jpg)
+    ![近期任务](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68331.jpg)
 
-12. 部署完成后，启动使用OVF模板部署的虚机。
+12. 部署完成后，启动使用OVF模板部署的虚拟机。
 
 13. 打开浏览器，在地址栏输入`http://hostname:8011`。
 
-    **说明：** `hostname`是您使用OVF模板部署的虚拟一体机的IP地址。
+    **说明：** `hostname`是您使用OVF模板部署的虚拟机的IP地址。
 
 14. 在激活网关页面，输入所需参数，然后单击**注册**登录混合云备份网关。各参数说明如下：
 
@@ -113,7 +114,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
     |:-|:-|
     |AccessKey ID|在开通HBR服务的阿里云账户中下载AccessKey ID和AccessKey Secret。详情请参见[为RAM用户创建AccessKey](/intl.zh-CN/常见问题/一般性问题/为RAM用户创建AccessKey.md)。|
     |AccessKey Secret|
-    |证书文件|选择在控制台下载的证书。证书激活后如果虚机关机超过5天，证书会失效，需要重新下载证书并激活。|
+    |证书文件|选择在控制台下载的证书。证书激活后如果虚拟机关机超过5天，证书会失效，需要重新下载证书并激活。|
 
     激活成功后，单击**确定**将跳转至混合云备份HBR控制台。
 
@@ -122,7 +123,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 1.  在**迁移网关**页签，单击操作栏下的**查看**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68353.jpg)
+    ![查看](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68353.jpg)
 
 2.  单击右上角的**添加vCenter服务器**。
 
@@ -135,11 +136,11 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
     **说明：** 建议您新建一个专门用于备份的VCenter服务器账号（具备Administrator权限），密码中的特殊字符建议使用英文句号（.）。
 
 
-## 步骤4：迁移VMware虚机
+## 步骤4：迁移VMware虚拟机
 
 1.  单击操作栏下的**迁移**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68364.jpg)
+    ![vCenter](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68364.jpg)
 
 2.  在**迁移计划**页签，按照以下说明填写各项参数，然后单击**下一步**。
 
@@ -155,24 +156,24 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
 **说明：**
 
-    -   如果虚机禁止了数据块修改跟踪技术（CBT），增量迁移将强制转为全量迁移。
+    -   如果虚拟机禁止了数据块修改跟踪技术（CBT），增量迁移将强制转为全量迁移。
     -   增量迁移模式下，HBR将自动创建镜像以支持测试拉起，会产生一定的镜像费用，镜像费用由ECS收取。详情请参见[计费概述](/intl.zh-CN/产品计费/计费概述.md)。 |
 
 3.  选择**待迁移虚机**，单击**下一步**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68369.jpg)
+    ![待迁移虚机](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68369.jpg)
 
 4.  在**配置云上ECS**页签，选择**专有网络**、**交换机**、**实例类型**、**实例规格**、**存储类型**、**安全组**、**IP地址类型**、是否**分配公网IP**、是否**恢复后启动系统**，是否**创建系统镜像**，选择**复制配置到所有虚机**或**保存配置到当前虚机**。
 
     **说明：** 选择安全组时，请确保允许出方向的TCP 80、443端口以及UDP 53端口。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68373.jpg)
+    ![创建迁移计划](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p68373.jpg)
 
 5.  单击**创建**后，即可启动当前迁移任务。在迁移状态页面，您可以查看迁移进度。
 
     ![syn](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p84851.jpg)
 
-    如果使用了增量迁移，待虚机迁移完成后，您可以执行以下操作。
+    如果使用了增量迁移，待虚拟机迁移完成后，您可以执行以下操作。
 
     -   单击**同步记录**，您可以查看增量迁移的数据大小、迁移的状态等信息。
 
@@ -182,7 +183,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
 
         ![verification](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p85370.jpg)
 
-        -   单击**迁移验证**，即将以最近一次同步（例如，2020-02-21 20:21:31）的数据创建出ECS，用于验证迁移到ECS的虚机是否工作正常。每台虚机最多可以做3次验证，验证不会中断预设的增量同步。确认进行迁移认证，请单击**确定**，开始创建ECS，待ECS创建完成后，您可以单击**继续迁移**，将清除已经创建的ECS并继续迁移。
+        -   单击**迁移验证**，即将以最近一次同步（例如，2020-02-21 20:21:31）的数据创建ECS，用于验证迁移到ECS的虚拟机是否工作正常。每台虚拟机最多可以做3次验证，验证不会中断预设的增量同步。确认进行迁移认证，请单击**确定**，开始创建ECS，待ECS创建完成后，您可以单击**继续迁移**，将清除已经创建的ECS并继续迁移。
 
             ![continue](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4151409951/p85373.png)
 
@@ -190,7 +191,7 @@ VMware虚机迁移服务主要针对VMware环境的虚机提供非侵入式的�
         **说明：**
 
         -   最后一次增量同步会增加完成迁移操作所需要的时间。
-        -   首次迁移验证或完成迁移操作成功立即收取该虚机的迁移费用，同一台虚机重复验证和完成迁移不再额外计费。如需获取更多费用信息，请参见[价格详情](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing)
+        -   首次迁移验证或完成迁移操作成功立即收取该虚拟机的迁移费用，同一台虚拟机重复验证和完成迁移不再额外计费。如需获取更多费用信息，请参见[价格详情](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing)
     -   单击**取消迁移**，即取消本次迁移任务。
 
 ## 收集日志方法
