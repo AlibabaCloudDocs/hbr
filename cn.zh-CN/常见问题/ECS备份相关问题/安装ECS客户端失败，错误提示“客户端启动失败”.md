@@ -1,10 +1,10 @@
 # 安装ECS客户端失败，错误提示“客户端启动失败”
 
-客户端启动失败可能是由于ECS实例安装了360等杀毒软件。
+客户端启动失败可能是由于ECS实例安装了杀毒软件。
 
 ## 解决方法
 
-[远程连接ECS实例](/cn.zh-CN/实例/连接实例/连接方式概述.md)，检查该ECS实例是否安装360等杀毒软件。运行杀毒软件会导致ECS备份客户端安装失败。
+[远程连接ECS实例](/cn.zh-CN/实例/连接实例/连接方式概述.md)，检查该ECS实例是否安装杀毒软件。运行杀毒软件会导致ECS备份客户端安装失败。
 
 您可以先[在ECS实例中卸载ECS备份客户端](/cn.zh-CN/常见问题/一般性问题/如何卸载混合云备份客户端.md)，停止杀毒软件，然后重新安装ECS客户端。具体操作如下：
 
@@ -14,6 +14,6 @@
 
 3.  找到客户端安装失败的ECS实例。在该实例相应的操作列表中，选择**操作** \> **重新安装**。
 
-    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0459917951/p34050.png)
+    ![install](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0459917951/p34050.png)
 
 
