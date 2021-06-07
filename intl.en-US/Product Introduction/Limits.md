@@ -10,7 +10,7 @@ This topic describes the limits of Hybrid Backup Recovery \(HBR\).
 
 ## VMware VM backup
 
--   You must install a VCenter Web Client \(5.5, 6.0, or 6.5\) on each virtual machine for which you want to create a backup.
+-   You must install a VCenter Web Client in version 5.5, 6.0, 6.5, or 6.7.
 -   A VCenter client and ESXi hypervisor must allow access from a backup gateway by using a fully qualified domain name \(FQDN\) or an IP address.
 -   If you want to back up a VM, you cannot create snapshots for the VM. Otherwise, you will be prompted the following message when you select the VM: You cannot back up the virtual machine because you have already created a snapshot. If a snapshot exists, you must delete it before you can back up the VM.
 -   You cannot back up VMs that have SCSI devices because vSphere VMs do not support shared SCSI devices.
