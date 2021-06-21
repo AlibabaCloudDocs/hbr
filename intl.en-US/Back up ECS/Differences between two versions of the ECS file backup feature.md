@@ -15,7 +15,7 @@ You can use the latest version on a more comprehensive and user-friendly interfa
 
 ## Version comparison
 
-HBR provides the latest version of the ECS file backup feature based on the earlier versions. You can use the latest version to back up files on a more comprehensive and user-friendly interface in the HBR console. The following figure describes the differences between the two versions of the ECS file backup feature.
+HBR provides the latest version of the ECS file backup feature based on the earlier versions. You can use the latest version to back up files on a more comprehensive and user-friendly interface in the HBR console. The following table describes the differences between the two versions of the ECS file backup feature.
 
 |Item|Earlier versions of ECS file backup|Latest version of ECS file backup|
 |----|-----------------------------------|---------------------------------|
