@@ -4,7 +4,7 @@ This topic describes the differences between the two versions of the on-premises
 
 Hybrid Backup Recovery \(HBR\) provides the latest version of the on-premises file backup feature based on the earlier versions. You can use the latest version to back up on-premises files on a more comprehensive and user-friendly interface in the HBR console. When you use the on-premises file backup feature for the first time, we recommend that you use the **latest version** of this feature.
 
-The following figure describes the differences between the two versions of the on-premises file backup feature.
+The following table describes the differences between the two versions of the on-premises file backup feature.
 
 |Item|Earlier versions of on-premises file backup|Latest version of on-premises file backup|
 |----|-------------------------------------------|-----------------------------------------|
