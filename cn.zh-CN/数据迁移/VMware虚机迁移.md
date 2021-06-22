@@ -4,13 +4,9 @@
 
 ## 前提条件
 
--   若您的Linux虚拟机使用LVM（Logical Volume Manager）卷作为系统盘，则虚拟机迁移服务暂时无法支持。
--   迁移前务必保证系统盘有至少1 GB的可用空间。待迁移虚拟机为Linux系统时，系统引导程序GRUB须为1.99及以上版本。
+**说明：** VMware虚拟机迁移服务不支持系统盘创建在LVM（Logical Volume Manager）卷的Linux虚拟机。
 
-**说明：**
-
--   对于CentOS 5、Red Hat 5和Debian 7等低版本操作系统，需要更新GRUB至1.99及以上版本。
--   部分系统如Amazon Linux需要更新至2.02及以上版本。
+迁移前务必保证系统盘有至少1 GB的可用空间。
 
 ## 背景信息
 
@@ -22,8 +18,15 @@ VMware虚拟机迁移服务主要针对VMware环境的虚拟机提供非侵入�
 
 -   支持的操作系统
 
-    VMware虚拟机迁移服务支持如下操作系统：CentOS、Ubuntu、CoreOS、Aliyun、Debian、Gentoo、SUSE、OpenSUSE、FreeBSD、RedHat、Windows Server 2003、Windows Server 2008、Windows Server 2012、Windows Server 2016、Windows 7、Customized Linux、Mars以及NeoKylin。
+    VMware虚拟机迁移服务支持如下操作系统：CentOS、Ubuntu、CoreOS、Aliyun、Debian、Gentoo、SUSE、OpenSUSE、FreeBSD、RedHat、Windows Server 2003、Windows Server 2008、Windows Server 2012、Windows Server 2016、Windows 7、Customized Linux、Mars、NeoKylin。
 
+-   支持的GRUB版本
+
+    VMware虚拟机迁移服务对于操作系统的GRUB版本要求如下：
+
+    -   对于Linux系统，需要更新GRUB至1.99及以上版本。
+    -   对于CentOS 5、Red Hat 5、Debian 7等低版本操作系统，需要更新GRUB至1.99及以上版本。
+    -   对于Amazon Linux等部分系统，需要更新GRUB至2.02及以上版本。
 
 ## 步骤1：创建迁移网关
 
