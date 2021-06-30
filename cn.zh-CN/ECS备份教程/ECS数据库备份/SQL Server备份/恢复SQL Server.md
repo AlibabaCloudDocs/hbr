@@ -10,6 +10,7 @@
 
 恢复SQL Server数据库时，请注意以下事项：
 
+-   无日志备份的情况下，不支持按时间点恢复。
 -   恢复SQL Server数据库时若选择增量备份，将自动恢复全量备份。无需单独恢复全量备份后再恢复增量备份。
 -   如需跨SQL Server恢复SQL Server数据库，请确保需要恢复的SQL Server版本低于或等于目标SQL Server版本。
 -   恢复master数据库前，HBR会自动重启SQL Server并切换到单用户模式下运行。更多信息，请参见[还原master数据库](https://docs.microsoft.com/zh-cn/sql/relational-databases/backup-restore/restore-the-master-database-transact-sql?view=sql-server-2017)。
