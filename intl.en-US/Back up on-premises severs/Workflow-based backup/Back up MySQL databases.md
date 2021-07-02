@@ -31,7 +31,7 @@ You must configure two scripts: pre-backup script and post-backup script. Perfor
     2.  Edit and save the pre-backup script. The following table describes the parameters in the pre-backup script for MySQL. You can set the parameters based on your requirements.
         -   Windows
 
-            ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/4404580061/p61140.png)
+            ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4404580061/p61140.png)
 
             |Parameter|Description|
             |:--------|:----------|
@@ -42,7 +42,7 @@ You must configure two scripts: pre-backup script and post-backup script. Perfor
 
             Set `BACKUPDIR` to the local backup path of the database. You need to specify this path as the backup source.
 
-            ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/4404580061/p61141.png)
+            ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4404580061/p61141.png)
 
 -   Post-backup script
 
@@ -57,7 +57,7 @@ To create a backup workflow, perform the following steps:
 
 2.  On the Backup Jobs/Create Backup Workflow page, click **Pre-backup Script**.
 
-    ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9423580061/p61078.png)
+    ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9423580061/p61078.png)
 
 3.  In the Script Path field of the Pre-backup Script dialog box, enter the path to the pre-backup script that you specified in [Step 2](#section_kll_y33_yfb).
 
@@ -102,7 +102,6 @@ To create a backup workflow, perform the following steps:
 
 ## What to do next
 
-[Restore files](/intl.en-US/Back up on-premises severs/Workflow-based backup/Restore backups.md)
-
-[Search backups](/intl.en-US/Back up on-premises severs/Workflow-based backup/Search backups.md)
+-   [Restore files](/intl.en-US/Back up on-premises severs/Workflow-based backup/Restore files.md)
+-   [Search backups](/intl.en-US/Back up on-premises severs/Workflow-based backup/Search backups.md)
 
