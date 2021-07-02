@@ -35,5 +35,5 @@ The following table describes the billing items of HBR.
 |Pay-as-you-go|The standard pricing scheme for HBR is used for all regions. For more information, see [Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing). |
 |Cross-region replication traffic|When you restore data backed up in HBR from a region to another, you may need to replicate the data from a backup vault to an image vault. In this case, you are charged for the generated traffic.|Pay-as-you-go|The standard pricing scheme for HBR is used for all regions. For more information, see [Hybrid Backup Recovery \(HBR\) Pricing](https://www.alibabacloud.com/product/hybrid-backup-recovery/pricing). |
 
-**Note:** HBR provides a two-month free trial free of charge. This allows you to back up each Apsara File Storage NAS file system and Object Storage Service \(OSS\) bucket. During the trial period, you are also not charged for the backup vault.
+**Note:** HBR provides a one-month free trial free of charge. This allows you to back up each Apsara File Storage NAS file system and Object Storage Service \(OSS\) bucket. During the trial period, you are also not charged for the backup vault.
 
