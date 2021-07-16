@@ -2,7 +2,7 @@
 
 当OSS发生系统故障或者错误操作时，您可以通过OSS恢复任务恢复OSS至对应版本。本文介绍创建OSS恢复任务的操作方法。
 
-已创建OSS备份计划并完成备份。具体操作，请参见[创建OSS备份计划](/intl.zh-CN/OSS备份教程/OSS备份.md)和[使用OSS清单创建大数据量OSS备份计划](/intl.zh-CN/OSS备份教程/使用OSS清单创建大数据量OSS备份计划.md)。
+已创建OSS备份计划并完成备份。具体操作，请参见[创建OSS备份计划](/intl.zh-CN/OSS备份教程/创建OSS备份计划.md)和[使用OSS清单创建大数据量OSS备份计划](/intl.zh-CN/OSS备份教程/使用OSS清单创建大数据量OSS备份计划.md)。
 
 ## 操作步骤
 
